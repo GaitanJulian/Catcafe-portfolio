@@ -1130,9 +1130,125 @@ __turbopack_context__.s([
     ()=>WebGLShowcase
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Catcafe portfolio/Catcafe-portfolio/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Catcafe portfolio/Catcafe-portfolio/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 'use client';
 ;
+// Configuración del build de Unity
+// Ruta base donde está el build de Unity
+const UNITY_BUILD_PATH = '/unity-build' // Carpeta base del build
+;
+const UNITY_BUILD_FOLDER = 'Build' // Subcarpeta dentro de unity-build
+;
+const UNITY_LOADER_FILE = 'Builds.loader.js' // Nombre del archivo loader de Unity
+;
 function WebGLShowcase({ onNavigate }) {
+    _s();
+    const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    const [loadError, setLoadError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [unityLoaded, setUnityLoaded] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const unityInstanceRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "WebGLShowcase.useEffect": ()=>{
+            // Cargar Unity WebGL cuando el componente se monta
+            let script = null;
+            const loadUnity = {
+                "WebGLShowcase.useEffect.loadUnity": async ()=>{
+                    try {
+                        // Verificar si el script de Unity ya está cargado
+                        if (window.unityInstance) {
+                            setUnityLoaded(true);
+                            setIsLoading(false);
+                            return;
+                        }
+                        // Cargar el script loader de Unity
+                        script = document.createElement('script');
+                        const buildUrl = `${UNITY_BUILD_PATH}/${UNITY_BUILD_FOLDER}`;
+                        const loaderUrl = `${buildUrl}/${UNITY_LOADER_FILE}`;
+                        console.log('Loading Unity from:', loaderUrl);
+                        script.src = loaderUrl;
+                        script.async = true;
+                        script.onload = ({
+                            "WebGLShowcase.useEffect.loadUnity": ()=>{
+                                // Unity está listo para cargar
+                                if (window.createUnityInstance && containerRef.current) {
+                                    // Buscar o crear el canvas para Unity
+                                    let canvas = containerRef.current.querySelector('#unity-canvas');
+                                    if (!canvas) {
+                                        // Crear canvas solo si no existe
+                                        canvas = document.createElement('canvas');
+                                        canvas.id = 'unity-canvas';
+                                        canvas.style.width = '100%';
+                                        canvas.style.height = '100%';
+                                        canvas.style.display = 'block';
+                                        canvas.style.position = 'relative';
+                                        canvas.style.zIndex = '1';
+                                        // Agregar el canvas al contenedor sin limpiar el contenido
+                                        // React gestionará los otros elementos (loading, error states)
+                                        containerRef.current.appendChild(canvas);
+                                    }
+                                    // Unity necesita el canvas directamente, no el contenedor
+                                    window.createUnityInstance(canvas, {
+                                        dataUrl: `${buildUrl}/Builds.data.unityweb`,
+                                        frameworkUrl: `${buildUrl}/Builds.framework.js.unityweb`,
+                                        codeUrl: `${buildUrl}/Builds.wasm.unityweb`,
+                                        streamingAssetsUrl: 'StreamingAssets',
+                                        companyName: 'SuperShyProductions',
+                                        productName: 'JulianGaitanPortfolio',
+                                        productVersion: '0.9'
+                                    }).then({
+                                        "WebGLShowcase.useEffect.loadUnity": (instance)=>{
+                                            unityInstanceRef.current = instance;
+                                            window.unityInstance = instance;
+                                            setUnityLoaded(true);
+                                            setIsLoading(false);
+                                        }
+                                    }["WebGLShowcase.useEffect.loadUnity"]).catch({
+                                        "WebGLShowcase.useEffect.loadUnity": (error)=>{
+                                            console.error('Error loading Unity:', error);
+                                            setLoadError('Failed to load Unity build. Please check the build path.');
+                                            setIsLoading(false);
+                                        }
+                                    }["WebGLShowcase.useEffect.loadUnity"]);
+                                } else {
+                                    setLoadError('Unity loader not found. Please ensure the build files are in the correct location.');
+                                    setIsLoading(false);
+                                }
+                            }
+                        })["WebGLShowcase.useEffect.loadUnity"];
+                        script.onerror = ({
+                            "WebGLShowcase.useEffect.loadUnity": ()=>{
+                                setLoadError(`Could not load Unity build from ${buildUrl}/${UNITY_LOADER_FILE}. Please check the path.`);
+                                setIsLoading(false);
+                            }
+                        })["WebGLShowcase.useEffect.loadUnity"];
+                        document.body.appendChild(script);
+                    } catch (error) {
+                        console.error('Error setting up Unity:', error);
+                        setLoadError('An error occurred while loading Unity.');
+                        setIsLoading(false);
+                    }
+                }
+            }["WebGLShowcase.useEffect.loadUnity"];
+            loadUnity();
+            // Cleanup cuando el componente se desmonta
+            return ({
+                "WebGLShowcase.useEffect": ()=>{
+                    if (script && script.parentNode) {
+                        script.parentNode.removeChild(script);
+                    }
+                    if (unityInstanceRef.current && typeof unityInstanceRef.current.Quit === 'function') {
+                        unityInstanceRef.current.Quit();
+                    }
+                    if (window.unityInstance) {
+                        delete window.unityInstance;
+                    }
+                }
+            })["WebGLShowcase.useEffect"];
+        }
+    }["WebGLShowcase.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "relative w-full h-full flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8",
         children: [
@@ -1143,7 +1259,7 @@ function WebGLShowcase({ onNavigate }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                lineNumber: 12,
+                lineNumber: 141,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1153,7 +1269,7 @@ function WebGLShowcase({ onNavigate }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                lineNumber: 16,
+                lineNumber: 145,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1163,7 +1279,7 @@ function WebGLShowcase({ onNavigate }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                lineNumber: 22,
+                lineNumber: 151,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1177,7 +1293,7 @@ function WebGLShowcase({ onNavigate }) {
                                 children: "Café Window"
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                lineNumber: 32,
+                                lineNumber: 161,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1185,13 +1301,13 @@ function WebGLShowcase({ onNavigate }) {
                                 children: "Interactive world showcase"
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                lineNumber: 35,
+                                lineNumber: 164,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                        lineNumber: 31,
+                        lineNumber: 160,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1201,7 +1317,7 @@ function WebGLShowcase({ onNavigate }) {
                                 className: "absolute -inset-4 bg-gradient-to-r from-amber-600/50 to-orange-600/40 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-2xl -z-10"
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                lineNumber: 40,
+                                lineNumber: 169,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1217,27 +1333,27 @@ function WebGLShowcase({ onNavigate }) {
                                                         className: "w-3 h-3 rounded-full bg-red-500 shadow-lg shadow-red-500/50"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                                        lineNumber: 46,
+                                                        lineNumber: 175,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "w-3 h-3 rounded-full bg-yellow-500 shadow-lg shadow-yellow-500/50"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                                        lineNumber: 47,
+                                                        lineNumber: 176,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "w-3 h-3 rounded-full bg-green-500 shadow-lg shadow-green-500/50"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                                        lineNumber: 48,
+                                                        lineNumber: 177,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                                lineNumber: 45,
+                                                lineNumber: 174,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1245,86 +1361,255 @@ function WebGLShowcase({ onNavigate }) {
                                                 children: "café-world.webgl"
                                             }, void 0, false, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                                lineNumber: 50,
+                                                lineNumber: 179,
                                                 columnNumber: 15
+                                            }, this),
+                                            isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "ml-auto text-xs text-amber-200/60 flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "animate-pulse",
+                                                        children: "●"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                        lineNumber: 182,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    " Loading..."
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                lineNumber: 181,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                        lineNumber: 44,
+                                        lineNumber: 173,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-full aspect-video bg-gradient-to-br from-slate-900 via-slate-950 to-black flex items-center justify-center",
+                                        className: "relative w-full aspect-video bg-gradient-to-br from-slate-900 via-slate-950 to-black overflow-hidden",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute inset-0 opacity-25",
+                                                className: "absolute inset-0 opacity-25 pointer-events-none",
                                                 style: {
                                                     background: 'radial-gradient(circle at center, rgba(255, 165, 0, 0.25) 0%, transparent 60%)'
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                                lineNumber: 56,
+                                                lineNumber: 190,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex flex-col items-center gap-6 z-10",
+                                                ref: containerRef,
+                                                className: "w-full h-full flex items-center justify-center relative",
+                                                style: {
+                                                    minHeight: '100%',
+                                                    position: 'relative'
+                                                },
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-7xl mb-4 animate-float",
-                                                        children: "🐱"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                                        lineNumber: 62,
-                                                        columnNumber: 17
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-center",
+                                                    isLoading && !loadError && !unityLoaded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex flex-col items-center gap-6 z-10 absolute inset-0",
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                className: "text-2xl font-semibold text-amber-100 mb-2",
-                                                                children: "Cat Café WebGL"
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "text-7xl mb-4 animate-float",
+                                                                children: "🐱"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                                                lineNumber: 64,
-                                                                columnNumber: 19
+                                                                lineNumber: 203,
+                                                                columnNumber: 21
                                                             }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-sm text-amber-100/70",
-                                                                children: "Embed your interactive build here"
-                                                            }, void 0, false, {
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "text-center",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                        className: "text-2xl font-semibold text-amber-100 mb-2",
+                                                                        children: "Loading Café World..."
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                        lineNumber: 205,
+                                                                        columnNumber: 23
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "flex gap-2 justify-center mt-4",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "w-2 h-2 bg-amber-400 rounded-full animate-pulse",
+                                                                                style: {
+                                                                                    animationDelay: '0s'
+                                                                                }
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                                lineNumber: 207,
+                                                                                columnNumber: 25
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "w-2 h-2 bg-amber-400 rounded-full animate-pulse",
+                                                                                style: {
+                                                                                    animationDelay: '0.2s'
+                                                                                }
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                                lineNumber: 208,
+                                                                                columnNumber: 25
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "w-2 h-2 bg-amber-400 rounded-full animate-pulse",
+                                                                                style: {
+                                                                                    animationDelay: '0.4s'
+                                                                                }
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                                lineNumber: 209,
+                                                                                columnNumber: 25
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                        lineNumber: 206,
+                                                                        columnNumber: 23
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
                                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                                                lineNumber: 65,
-                                                                columnNumber: 19
+                                                                lineNumber: 204,
+                                                                columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                                        lineNumber: 63,
-                                                        columnNumber: 17
+                                                        lineNumber: 202,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    loadError && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex flex-col items-center gap-6 z-10 p-8 absolute inset-0",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "text-6xl mb-4",
+                                                                children: "⚠️"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                lineNumber: 218,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "text-center max-w-md",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                        className: "text-xl font-semibold text-amber-100 mb-2",
+                                                                        children: "Unable to Load"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                        lineNumber: 220,
+                                                                        columnNumber: 23
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "text-sm text-amber-100/70 mb-4",
+                                                                        children: loadError
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                        lineNumber: 221,
+                                                                        columnNumber: 23
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "text-xs text-amber-100/50 mt-4",
+                                                                        children: [
+                                                                            "Make sure your Unity build is in ",
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
+                                                                                className: "bg-amber-900/30 px-2 py-1 rounded",
+                                                                                children: [
+                                                                                    UNITY_BUILD_PATH,
+                                                                                    "/",
+                                                                                    UNITY_BUILD_FOLDER
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                                lineNumber: 223,
+                                                                                columnNumber: 58
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                        lineNumber: 222,
+                                                                        columnNumber: 23
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                lineNumber: 219,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                        lineNumber: 217,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    !isLoading && !loadError && !unityLoaded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex flex-col items-center gap-6 z-10",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "text-7xl mb-4 animate-float",
+                                                                children: "🐱"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                lineNumber: 232,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "text-center",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                        className: "text-2xl font-semibold text-amber-100 mb-2",
+                                                                        children: "Cat Café WebGL"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                        lineNumber: 234,
+                                                                        columnNumber: 23
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "text-sm text-amber-100/70",
+                                                                        children: "Configure your Unity build path"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                        lineNumber: 235,
+                                                                        columnNumber: 23
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                                lineNumber: 233,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
+                                                        lineNumber: 231,
+                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                                lineNumber: 61,
+                                                lineNumber: 195,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                        lineNumber: 54,
+                                        lineNumber: 188,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                lineNumber: 42,
+                                lineNumber: 171,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                        lineNumber: 39,
+                        lineNumber: 168,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1356,7 +1641,7 @@ function WebGLShowcase({ onNavigate }) {
                                                 children: feature.icon
                                             }, void 0, false, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                                lineNumber: 81,
+                                                lineNumber: 253,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1364,7 +1649,7 @@ function WebGLShowcase({ onNavigate }) {
                                                 children: feature.title
                                             }, void 0, false, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                                lineNumber: 82,
+                                                lineNumber: 254,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1372,18 +1657,18 @@ function WebGLShowcase({ onNavigate }) {
                                                 children: feature.desc
                                             }, void 0, false, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                                lineNumber: 83,
+                                                lineNumber: 255,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, idx, true, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 252,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                lineNumber: 74,
+                                lineNumber: 246,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1394,12 +1679,12 @@ function WebGLShowcase({ onNavigate }) {
                                     children: "↓ Back to Café"
                                 }, void 0, false, {
                                     fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                    lineNumber: 90,
+                                    lineNumber: 262,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                lineNumber: 89,
+                                lineNumber: 261,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1411,7 +1696,7 @@ function WebGLShowcase({ onNavigate }) {
                                         children: "← Prev"
                                     }, void 0, false, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                        lineNumber: 99,
+                                        lineNumber: 271,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1420,34 +1705,35 @@ function WebGLShowcase({ onNavigate }) {
                                         children: "Next →"
                                     }, void 0, false, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                        lineNumber: 105,
+                                        lineNumber: 277,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                                lineNumber: 98,
+                                lineNumber: 270,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                        lineNumber: 72,
+                        lineNumber: 244,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-                lineNumber: 29,
+                lineNumber: 158,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/webgl-showcase.tsx",
-        lineNumber: 11,
+        lineNumber: 140,
         columnNumber: 5
     }, this);
 }
+_s(WebGLShowcase, "25WsQsy5KnjBmAE24Sp0U5E87sI=");
 _c = WebGLShowcase;
 var _c;
 __turbopack_context__.k.register(_c, "WebGLShowcase");

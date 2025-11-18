@@ -100,6 +100,7 @@
     --color-orange-900: #7e2a0c;
     --color-amber-100: #fef3c6;
     --color-amber-200: #fee685;
+    --color-amber-400: #fcbb00;
     --color-amber-500: #f99c00;
     --color-amber-600: #dd7400;
     --color-amber-700: #b75000;
@@ -123,6 +124,7 @@
     --color-white: #fff;
     --spacing: .25rem;
     --container-sm: 24rem;
+    --container-md: 28rem;
     --container-lg: 32rem;
     --container-2xl: 42rem;
     --container-4xl: 56rem;
@@ -203,6 +205,7 @@
       --color-orange-900: lab(30.2951% 36.0434 37.671);
       --color-amber-100: lab(95.916% -1.2165 23.111);
       --color-amber-200: lab(91.7203% -.505269 49.9084);
+      --color-amber-400: lab(80.1641% 16.6016 99.2089);
       --color-amber-500: lab(72.7183% 31.8672 97.9407);
       --color-amber-600: lab(60.3514% 40.5624 87.1228);
       --color-amber-700: lab(47.2709% 42.9082 69.2966);
@@ -926,6 +929,10 @@
     display: block;
   }
 
+  .contents {
+    display: contents;
+  }
+
   .flex {
     display: flex;
   }
@@ -1301,6 +1308,10 @@
 
   .max-w-max {
     max-width: max-content;
+  }
+
+  .max-w-md {
+    max-width: var(--container-md);
   }
 
   .max-w-sm {
@@ -1686,6 +1697,10 @@
     overflow-y: auto;
   }
 
+  .rounded {
+    border-radius: .25rem;
+  }
+
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -1922,6 +1937,10 @@
     background-color: var(--accent);
   }
 
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
+  }
+
   .bg-amber-500\/30 {
     background-color: #f99c004d;
   }
@@ -1939,6 +1958,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-amber-700\/20 {
       background-color: color-mix(in oklab, var(--color-amber-700) 20%, transparent);
+    }
+  }
+
+  .bg-amber-900\/30 {
+    background-color: #7b33064d;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-amber-900\/30 {
+      background-color: color-mix(in oklab, var(--color-amber-900) 30%, transparent);
     }
   }
 
@@ -2662,6 +2691,16 @@
     color: var(--color-amber-100);
   }
 
+  .text-amber-100\/50 {
+    color: #fef3c680;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-amber-100\/50 {
+      color: color-mix(in oklab, var(--color-amber-100) 50%, transparent);
+    }
+  }
+
   .text-amber-100\/70 {
     color: #fef3c6b3;
   }
@@ -3125,6 +3164,10 @@
 
   .\[--cell-size\:--spacing\(8\)\] {
     --cell-size: calc(var(--spacing) * 8);
+  }
+
+  .running {
+    animation-play-state: running;
   }
 
   .group-focus-within\/menu-item\:opacity-100:is(:where(.group\/menu-item):focus-within *) {
