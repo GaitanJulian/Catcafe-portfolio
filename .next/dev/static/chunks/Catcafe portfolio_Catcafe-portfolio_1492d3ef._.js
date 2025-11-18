@@ -1114,43 +1114,117 @@ function GameDevelopment({ onNavigate }) {
     _s();
     const games = [
         {
-            title: 'Cat Café Experience',
-            description: 'The main interactive café world - a cozy indie game.',
-            emoji: '🐱',
-            status: 'Complete'
+            title: 'Interactive Portfolio (WIP)',
+            description: 'A living, interactive space where visitors can explore my work as a 3D character, discover projects, and experience playful design.',
+            emoji: '🐾',
+            image: '/projects/interactive-portfolio-cover.png',
+            status: 'In Development',
+            tags: [
+                'Unity',
+                'C#',
+                'WebGL',
+                'UX'
+            ],
+            itchUrl: 'https://google.com',
+            githubUrl: 'https://github.com'
         },
         {
-            title: 'Prototype Playland',
-            description: 'Experimental mechanics laboratory where creative ideas evolve.',
-            emoji: '🎮',
-            status: 'In Development'
+            title: 'Bootcamp Brawlers',
+            description: 'Fast-paced arena brawler for up to 4 players with hazards, pickups, and polished gameplay.',
+            emoji: '⚔️',
+            image: '/projects/bootcamp-brawlers-cover.png',
+            status: 'Complete',
+            tags: [
+                'Unity',
+                'C#',
+                'Local Multiplayer'
+            ],
+            itchUrl: 'https://google.com',
+            githubUrl: 'https://github.com'
         },
         {
-            title: 'Game Jam Magic',
-            description: 'Fast-paced creations from game jam competitions.',
-            emoji: '⚡',
-            status: 'Complete'
+            title: 'Life by Candlelight',
+            description: 'Atmospheric narrative-driven horror about light management, space tension and storytelling.',
+            emoji: '🕯️',
+            image: '/projects/life-by-candlelight-cover.png',
+            status: 'Complete',
+            tags: [
+                'Unity',
+                'Lighting',
+                'Level Design'
+            ],
+            itchUrl: 'https://google.com',
+            githubUrl: 'https://github.com'
+        },
+        {
+            title: 'Xenofurious Sabotage',
+            description: 'Pixel-art arcade shooter with tight controls and tuned enemy patterns.',
+            emoji: '👾',
+            image: '/projects/xenofurious-sabotage-cover.png',
+            status: 'Complete',
+            tags: [
+                'Unity',
+                '2D',
+                'C#'
+            ],
+            itchUrl: 'https://google.com',
+            githubUrl: 'https://github.com'
+        },
+        {
+            title: 'NanoEscape',
+            description: 'Puzzle-platformer focusing on mechanics clarity and level pacing.',
+            emoji: '🧪',
+            image: '/projects/nanoescape-cover.png',
+            status: 'Complete',
+            tags: [
+                'Unity',
+                'C#',
+                'Level Design'
+            ],
+            itchUrl: 'https://google.com',
+            githubUrl: 'https://github.com'
+        },
+        {
+            title: 'Runes Quest',
+            description: 'Card + strategy prototype mixing lane combat and UI feedback.',
+            emoji: '🔮',
+            image: '/projects/runes-quest-cover.png',
+            status: 'Prototype',
+            tags: [
+                'Unity',
+                'UI',
+                'C#'
+            ],
+            itchUrl: 'https://google.com',
+            githubUrl: 'https://github.com'
+        },
+        {
+            title: 'Dimensional Dream',
+            description: 'Puzzle-platformer made in a jam with rapid prototyping and collaboration focus.',
+            emoji: '✨',
+            image: '/projects/dimensional-dream-cover.png',
+            status: 'Game Jam',
+            tags: [
+                'Unity',
+                'C#',
+                'Jam Game'
+            ],
+            itchUrl: 'https://google.com',
+            githubUrl: 'https://github.com'
         }
     ];
     const [centerIndex, setCenterIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const getVisibleIndices = ()=>{
         const total = games.length;
-        const left = (centerIndex - 1 + total) % total;
-        const center = centerIndex;
-        const right = (centerIndex + 1) % total;
         return {
-            left,
-            center,
-            right
+            left: (centerIndex - 1 + total) % total,
+            center: centerIndex,
+            right: (centerIndex + 1) % total
         };
     };
     const { left, center, right } = getVisibleIndices();
-    const nextSlide = ()=>{
-        setCenterIndex((prev)=>(prev + 1) % games.length);
-    };
-    const prevSlide = ()=>{
-        setCenterIndex((prev)=>(prev - 1 + games.length) % games.length);
-    };
+    const nextSlide = ()=>setCenterIndex((i)=>(i + 1) % games.length);
+    const prevSlide = ()=>setCenterIndex((i)=>(i - 1 + games.length) % games.length);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "relative w-full h-full flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8",
         children: [
@@ -1161,323 +1235,301 @@ function GameDevelopment({ onNavigate }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                lineNumber: 53,
+                lineNumber: 123,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute top-0 left-1/3 w-96 h-96 rounded-full opacity-25 pointer-events-none blur-3xl -z-10",
+                className: "absolute top-1/4 left-1/3 w-96 h-96 rounded-full opacity-30 blur-3xl -z-10",
                 style: {
-                    background: 'radial-gradient(circle, rgba(123, 168, 159, 0.4) 0%, transparent 70%)'
+                    background: 'radial-gradient(circle, rgba(123,168,159,0.4) 0%, transparent 70%)'
                 }
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                lineNumber: 58,
+                lineNumber: 131,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full opacity-20 pointer-events-none blur-3xl -z-10",
-                style: {
-                    background: 'radial-gradient(circle, rgba(123, 168, 159, 0.25) 0%, transparent 70%)'
-                }
-            }, void 0, false, {
-                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                lineNumber: 64,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full max-w-6xl",
+                className: "text-center mb-12",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-center mb-12",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "text-6xl mb-4 animate-subtle-scale",
-                                children: "🎮"
-                            }, void 0, false, {
-                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                lineNumber: 74,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-5xl sm:text-6xl font-bold mb-4 bg-gradient-to-r from-emerald-200 to-teal-300 bg-clip-text text-transparent",
-                                children: "Play Corner"
-                            }, void 0, false, {
-                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                lineNumber: 75,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-lg text-muted-foreground",
-                                children: "Games and interactive experiences"
-                            }, void 0, false, {
-                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                lineNumber: 78,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                        lineNumber: 73,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative mb-12 flex justify-center items-center h-80",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute left-0 w-1/4 opacity-60 scale-75 transition-all duration-500",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "card-glow p-6 rounded-xl h-full flex flex-col border border-emerald-500/20",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-5xl mb-4 inline-block",
-                                            children: games[left].emoji
-                                        }, void 0, false, {
-                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                            lineNumber: 86,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xl font-bold mb-2 text-foreground",
-                                            children: games[left].title
-                                        }, void 0, false, {
-                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                            lineNumber: 89,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-sm text-muted-foreground mb-6 flex-grow",
-                                            children: games[left].description
-                                        }, void 0, false, {
-                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                            lineNumber: 90,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: `px-3 py-1 rounded-full text-xs font-semibold w-fit ${games[left].status === 'Complete' ? 'bg-emerald-500/30 text-emerald-100' : 'bg-amber-500/30 text-amber-100'}`,
-                                            children: games[left].status
-                                        }, void 0, false, {
-                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                            lineNumber: 91,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                    lineNumber: 85,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                lineNumber: 84,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative w-1/3 transition-all duration-500 z-10",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "group card-glow p-6 rounded-xl h-full flex flex-col border border-emerald-500/20 scale-100 shadow-2xl",
-                                    style: {
-                                        boxShadow: '0 0 50px rgba(123, 168, 159, 0.4), 0 0 100px rgba(196, 240, 232, 0.2)'
-                                    },
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"
-                                        }, void 0, false, {
-                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                            lineNumber: 106,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-5xl mb-4 group-hover:animate-float inline-block",
-                                            children: games[center].emoji
-                                        }, void 0, false, {
-                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                            lineNumber: 107,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xl font-bold mb-2 text-foreground",
-                                            children: games[center].title
-                                        }, void 0, false, {
-                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                            lineNumber: 110,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-sm text-muted-foreground mb-6 flex-grow",
-                                            children: games[center].description
-                                        }, void 0, false, {
-                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                            lineNumber: 111,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: `px-3 py-1 rounded-full text-xs font-semibold w-fit ${games[center].status === 'Complete' ? 'bg-emerald-500/30 text-emerald-100' : 'bg-amber-500/30 text-amber-100'}`,
-                                            children: games[center].status
-                                        }, void 0, false, {
-                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                            lineNumber: 112,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                    lineNumber: 103,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                lineNumber: 102,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute right-0 w-1/4 opacity-60 scale-75 transition-all duration-500",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "card-glow p-6 rounded-xl h-full flex flex-col border border-emerald-500/20",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-5xl mb-4 inline-block",
-                                            children: games[right].emoji
-                                        }, void 0, false, {
-                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                            lineNumber: 125,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xl font-bold mb-2 text-foreground",
-                                            children: games[right].title
-                                        }, void 0, false, {
-                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                            lineNumber: 128,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-sm text-muted-foreground mb-6 flex-grow",
-                                            children: games[right].description
-                                        }, void 0, false, {
-                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                            lineNumber: 129,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: `px-3 py-1 rounded-full text-xs font-semibold w-fit ${games[right].status === 'Complete' ? 'bg-emerald-500/30 text-emerald-100' : 'bg-amber-500/30 text-amber-100'}`,
-                                            children: games[right].status
-                                        }, void 0, false, {
-                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                            lineNumber: 130,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                    lineNumber: 124,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                lineNumber: 123,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                        lineNumber: 82,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex justify-center gap-8 mb-12",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: prevSlide,
-                                className: "px-4 py-2 card-glow text-foreground rounded-lg hover-lift-glow text-sm font-semibold transition-all",
-                                children: "← Prev"
-                            }, void 0, false, {
-                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                lineNumber: 143,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-2",
-                                children: games.map((_, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: ()=>setCenterIndex(idx),
-                                        className: `w-2 h-2 rounded-full transition-all ${centerIndex === idx ? 'bg-emerald-400 w-6' : 'bg-emerald-400/40'}`
-                                    }, idx, false, {
-                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                        lineNumber: 151,
-                                        columnNumber: 15
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                lineNumber: 149,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: nextSlide,
-                                className: "px-4 py-2 card-glow text-foreground rounded-lg hover-lift-glow text-sm font-semibold transition-all",
-                                children: "Next →"
-                            }, void 0, false, {
-                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                lineNumber: 160,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                        lineNumber: 142,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col items-center gap-4 mb-4",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: ()=>onNavigate('hero'),
-                            className: "px-6 py-2 card-glow text-foreground rounded-lg hover-lift-glow text-sm font-semibold",
-                            children: "↓ Back to Café"
-                        }, void 0, false, {
-                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                            lineNumber: 169,
-                            columnNumber: 11
-                        }, this)
+                        className: "text-6xl mb-4 animate-subtle-scale",
+                        children: "🎮"
                     }, void 0, false, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                        lineNumber: 168,
+                        lineNumber: 139,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex gap-4 justify-center",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>onNavigate('backend'),
-                                className: "px-4 py-2 bg-emerald-700/20 text-emerald-200/60 hover:text-emerald-200 hover:bg-emerald-700/30 rounded-lg text-sm transition-all",
-                                children: "← Prev"
-                            }, void 0, false, {
-                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                lineNumber: 178,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>onNavigate('webgl'),
-                                className: "px-4 py-2 bg-emerald-700/20 text-emerald-200/60 hover:text-emerald-200 hover:bg-emerald-700/30 rounded-lg text-sm transition-all",
-                                children: "Next →"
-                            }, void 0, false, {
-                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                                lineNumber: 184,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: "text-5xl sm:text-6xl font-bold mb-4 bg-gradient-to-r from-emerald-200 to-teal-300 bg-clip-text text-transparent",
+                        children: "Play Corner"
+                    }, void 0, false, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                        lineNumber: 177,
+                        lineNumber: 140,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-lg text-muted-foreground",
+                        children: "Games and interactive experiences"
+                    }, void 0, false, {
+                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                        lineNumber: 143,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-                lineNumber: 71,
+                lineNumber: 138,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative mb-12 flex justify-center items-center h-80 mt-8",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute left-0 w-1/4 opacity-60 scale-75 transition-all duration-500",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "card-glow p-6 rounded-xl h-full flex flex-col border border-emerald-500/20",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-5xl mb-4",
+                                    children: games[left].emoji
+                                }, void 0, false, {
+                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                    lineNumber: 152,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-xl font-bold mb-2",
+                                    children: games[left].title
+                                }, void 0, false, {
+                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                    lineNumber: 153,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-sm text-muted-foreground flex-grow mb-4",
+                                    children: games[left].description
+                                }, void 0, false, {
+                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                    lineNumber: 154,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "px-3 py-1 text-xs rounded-full bg-emerald-500/20 text-emerald-100 w-fit",
+                                    children: games[left].status
+                                }, void 0, false, {
+                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                    lineNumber: 155,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                            lineNumber: 151,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                        lineNumber: 150,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "relative w-1/3 max-w-md z-10 transition-all duration-500",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "group card-glow p-6 rounded-xl h-full flex flex-col border border-emerald-500/30 shadow-2xl hover-lift-glow",
+                            style: {
+                                boxShadow: '0 0 50px rgba(123,168,159,0.4), 0 0 100px rgba(196,240,232,0.2)'
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-6xl mb-4",
+                                    children: games[center].emoji
+                                }, void 0, false, {
+                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                    lineNumber: 170,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-2xl font-bold mb-2",
+                                    children: games[center].title
+                                }, void 0, false, {
+                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                    lineNumber: 171,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-sm text-muted-foreground flex-grow mb-4 leading-relaxed",
+                                    children: games[center].description
+                                }, void 0, false, {
+                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                    lineNumber: 173,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex flex-wrap gap-2 mb-4",
+                                    children: games[center].tags?.map((t, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "px-2 py-1 text-xs rounded-full bg-emerald-500/20 text-emerald-100 border border-emerald-500/30",
+                                            children: t
+                                        }, i, false, {
+                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                            lineNumber: 179,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                    lineNumber: 177,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex gap-2 mt-auto",
+                                    children: [
+                                        games[center].itchUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: games[center].itchUrl,
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            className: "px-3 py-2 bg-teal-600/30 text-teal-100 hover:bg-teal-600/50 rounded-lg text-xs font-semibold transition-all",
+                                            children: "▶ Play on Itch.io"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                            lineNumber: 187,
+                                            columnNumber: 17
+                                        }, this),
+                                        games[center].githubUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: games[center].githubUrl,
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            className: "px-3 py-2 bg-emerald-600/30 text-emerald-100 hover:bg-emerald-600/50 rounded-lg text-xs font-semibold transition-all",
+                                            children: "GitHub"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                            lineNumber: 198,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                    lineNumber: 185,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                            lineNumber: 163,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                        lineNumber: 162,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute right-0 w-1/4 opacity-60 scale-75 transition-all duration-500",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "card-glow p-6 rounded-xl h-full flex flex-col border border-emerald-500/20",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-5xl mb-4",
+                                    children: games[right].emoji
+                                }, void 0, false, {
+                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                    lineNumber: 214,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-xl font-bold mb-2",
+                                    children: games[right].title
+                                }, void 0, false, {
+                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                    lineNumber: 215,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-sm text-muted-foreground flex-grow mb-4",
+                                    children: games[right].description
+                                }, void 0, false, {
+                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                    lineNumber: 216,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "px-3 py-1 text-xs rounded-full bg-emerald-500/20 text-emerald-100 w-fit",
+                                    children: games[right].status
+                                }, void 0, false, {
+                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                    lineNumber: 217,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                            lineNumber: 213,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                        lineNumber: 212,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                lineNumber: 147,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex justify-center gap-8 mb-12",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        onClick: prevSlide,
+                        className: "px-4 py-2 card-glow rounded-lg hover-lift-glow text-sm font-semibold",
+                        children: "← Prev"
+                    }, void 0, false, {
+                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                        lineNumber: 226,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-2",
+                        children: games.map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>setCenterIndex(i),
+                                className: `w-2 h-2 rounded-full transition-all ${centerIndex === i ? 'bg-emerald-400 w-6' : 'bg-emerald-400/40'}`
+                            }, i, false, {
+                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                                lineNumber: 234,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                        lineNumber: 232,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        onClick: nextSlide,
+                        className: "px-4 py-2 card-glow rounded-lg hover-lift-glow text-sm font-semibold",
+                        children: "Next →"
+                    }, void 0, false, {
+                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                        lineNumber: 243,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                lineNumber: 225,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                onClick: ()=>onNavigate('hero'),
+                className: "px-6 py-2 card-glow rounded-lg hover-lift-glow text-sm font-semibold",
+                children: "↓ Back to Café"
+            }, void 0, false, {
+                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
+                lineNumber: 252,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx",
-        lineNumber: 52,
+        lineNumber: 120,
         columnNumber: 5
     }, this);
 }
