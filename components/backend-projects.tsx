@@ -285,7 +285,7 @@ export default function BackendProjects({ onNavigate }: BackendProjectsProps) {
             onClick={() => onNavigate('hero')}
             className="px-6 py-2 card-glow text-foreground rounded-lg hover-lift-glow text-sm font-semibold"
           >
-            ↓ Back to Café
+            ↓ Back to Home
           </button>
         </div>
 

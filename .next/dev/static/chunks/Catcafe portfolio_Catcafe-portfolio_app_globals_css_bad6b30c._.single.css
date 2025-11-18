@@ -111,7 +111,6 @@
     --color-amber-100: #fef3c6;
     --color-amber-200: #fee685;
     --color-amber-400: #fcbb00;
-    --color-amber-500: #f99c00;
     --color-amber-600: #dd7400;
     --color-amber-700: #b75000;
     --color-amber-900: #7b3306;
@@ -222,7 +221,6 @@
       --color-amber-100: lab(95.916% -1.2165 23.111);
       --color-amber-200: lab(91.7203% -.505269 49.9084);
       --color-amber-400: lab(80.1641% 16.6016 99.2089);
-      --color-amber-500: lab(72.7183% 31.8672 97.9407);
       --color-amber-600: lab(60.3514% 40.5624 87.1228);
       --color-amber-700: lab(47.2709% 42.9082 69.2966);
       --color-amber-900: lab(31.2288% 30.2627 40.0378);
@@ -1990,16 +1988,6 @@
     background-color: var(--color-amber-400);
   }
 
-  .bg-amber-500\/30 {
-    background-color: #f99c004d;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-amber-500\/30 {
-      background-color: color-mix(in oklab, var(--color-amber-500) 30%, transparent);
-    }
-  }
-
   .bg-amber-700\/20 {
     background-color: #b7500033;
   }
@@ -2080,6 +2068,16 @@
     }
   }
 
+  .bg-emerald-500\/15 {
+    background-color: #00bb7f26;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-emerald-500\/15 {
+      background-color: color-mix(in oklab, var(--color-emerald-500) 15%, transparent);
+    }
+  }
+
   .bg-emerald-500\/20 {
     background-color: #00bb7f33;
   }
@@ -2087,16 +2085,6 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-emerald-500\/20 {
       background-color: color-mix(in oklab, var(--color-emerald-500) 20%, transparent);
-    }
-  }
-
-  .bg-emerald-500\/30 {
-    background-color: #00bb7f4d;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-emerald-500\/30 {
-      background-color: color-mix(in oklab, var(--color-emerald-500) 30%, transparent);
     }
   }
 
@@ -2343,20 +2331,6 @@
 
   .from-emerald-200 {
     --tw-gradient-from: var(--color-emerald-200);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-
-  .from-emerald-500\/10 {
-    --tw-gradient-from: #00bb7f1a;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .from-emerald-500\/10 {
-      --tw-gradient-from: color-mix(in oklab, var(--color-emerald-500) 10%, transparent);
-    }
-  }
-
-  .from-emerald-500\/10 {
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
@@ -2768,6 +2742,10 @@
 
   .text-\[0\.8rem\] {
     font-size: .8rem;
+  }
+
+  .text-\[10px\] {
+    font-size: 10px;
   }
 
   .leading-none {

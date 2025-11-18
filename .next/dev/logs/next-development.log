@@ -1,507 +1,976 @@
-[00:00:01.141] Server  LOG      ✓ Ready in 772ms
-[00:00:07.755] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.162] Browser LOG     Loading Unity from: /unity-build/Build/Builds.loader.js
-[00:00:08.162] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.framework.js.unityweb" file.
-[00:00:08.162] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.wasm.unityweb" file.
-[00:00:08.162] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.data.unityweb" file.
-[00:00:08.162] Browser LOG     [UnityCache] 'http://localhost:3000/unity-build/Build/Builds.data.unityweb' successfully downloaded and stored in the browser cache
-[00:00:08.162] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:08.162] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:08.162] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763484149803}
-[00:00:09.434] Browser LOG     [UnityMemory] Configuration Parameters - Can be set up in boot.config
+[00:00:00.760] Server  LOG      ✓ Ready in 491ms
+[00:00:05.501] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.775] Browser LOG     Loading Unity from: /unity-build/Build/Builds.loader.js
+[00:00:05.775] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:05.775] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:05.775] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763488718231}
+[00:00:05.775] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.framework.js.unityweb" file.
+[00:00:05.775] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.wasm.unityweb" file.
+[00:00:05.775] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.data.unityweb" file.
+[00:00:05.882] Browser LOG     [UnityCache] 'http://localhost:3000/unity-build/Build/Builds.data.unityweb' successfully downloaded and stored in the browser cache
+[00:00:07.182] Browser LOG     [UnityMemory] Configuration Parameters - Can be set up in boot.config
 
-[00:00:09.434] Browser LOG         "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+[00:00:07.182] Browser LOG         "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
 
-[00:00:09.434] Browser LOG         "memorysetup-allocator-temp-initial-block-size-main=262144"
+[00:00:07.182] Browser LOG         "memorysetup-allocator-temp-initial-block-size-main=262144"
 
-[00:00:09.434] Browser LOG         "memorysetup-allocator-temp-initial-block-size-worker=262144"
+[00:00:07.182] Browser LOG         "memorysetup-allocator-temp-initial-block-size-worker=262144"
 
-[00:00:09.434] Browser LOG         "memorysetup-temp-allocator-size-audio-worker=65536"
+[00:00:07.182] Browser LOG         "memorysetup-temp-allocator-size-audio-worker=65536"
 
-[00:00:09.434] Browser LOG         "memorysetup-temp-allocator-size-background-worker=32768"
+[00:00:07.182] Browser LOG         "memorysetup-temp-allocator-size-background-worker=32768"
 
-[00:00:09.434] Browser LOG         "memorysetup-bucket-allocator-granularity=16"
+[00:00:07.182] Browser LOG         "memorysetup-bucket-allocator-granularity=16"
 
-[00:00:09.434] Browser LOG         "memorysetup-bucket-allocator-bucket-count=8"
+[00:00:07.182] Browser LOG         "memorysetup-bucket-allocator-bucket-count=8"
 
-[00:00:09.434] Browser LOG         "memorysetup-bucket-allocator-block-size=4194304"
+[00:00:07.183] Browser LOG         "memorysetup-bucket-allocator-block-size=4194304"
 
-[00:00:09.434] Browser LOG         "memorysetup-bucket-allocator-block-count=1"
+[00:00:07.183] Browser LOG         "memorysetup-bucket-allocator-block-count=1"
 
-[00:00:09.434] Browser LOG         "memorysetup-main-allocator-block-size=16777216"
+[00:00:07.183] Browser LOG         "memorysetup-main-allocator-block-size=16777216"
 
-[00:00:09.434] Browser LOG         "memorysetup-thread-allocator-block-size=16777216"
+[00:00:07.183] Browser LOG         "memorysetup-thread-allocator-block-size=16777216"
 
-[00:00:09.434] Browser LOG         "memorysetup-gfx-main-allocator-block-size=16777216"
+[00:00:07.183] Browser LOG         "memorysetup-gfx-main-allocator-block-size=16777216"
 
-[00:00:09.434] Browser LOG         "memorysetup-gfx-thread-allocator-block-size=16777216"
+[00:00:07.183] Browser LOG         "memorysetup-gfx-thread-allocator-block-size=16777216"
 
-[00:00:09.434] Browser LOG         "memorysetup-cache-allocator-block-size=4194304"
+[00:00:07.183] Browser LOG         "memorysetup-cache-allocator-block-size=4194304"
 
-[00:00:09.434] Browser LOG         "memorysetup-typetree-allocator-block-size=2097152"
+[00:00:07.183] Browser LOG         "memorysetup-typetree-allocator-block-size=2097152"
 
-[00:00:09.434] Browser LOG         "memorysetup-profiler-bucket-allocator-granularity=16"
+[00:00:07.183] Browser LOG         "memorysetup-profiler-bucket-allocator-granularity=16"
 
-[00:00:09.434] Browser LOG         "memorysetup-profiler-bucket-allocator-bucket-count=8"
+[00:00:07.183] Browser LOG         "memorysetup-profiler-bucket-allocator-bucket-count=8"
 
-[00:00:09.434] Browser LOG         "memorysetup-profiler-bucket-allocator-block-size=4194304"
+[00:00:07.183] Browser LOG         "memorysetup-profiler-bucket-allocator-block-size=4194304"
 
-[00:00:09.434] Browser LOG         "memorysetup-profiler-bucket-allocator-block-count=1"
+[00:00:07.183] Browser LOG         "memorysetup-profiler-bucket-allocator-block-count=1"
 
-[00:00:09.434] Browser LOG         "memorysetup-profiler-allocator-block-size=16777216"
+[00:00:07.183] Browser LOG         "memorysetup-profiler-allocator-block-size=16777216"
 
-[00:00:09.434] Browser LOG         "memorysetup-profiler-editor-allocator-block-size=1048576"
+[00:00:07.183] Browser LOG         "memorysetup-profiler-editor-allocator-block-size=1048576"
 
-[00:00:09.434] Browser LOG         "memorysetup-temp-allocator-size-main=4194304"
+[00:00:07.183] Browser LOG         "memorysetup-temp-allocator-size-main=4194304"
 
-[00:00:09.434] Browser LOG         "memorysetup-job-temp-allocator-block-size=2097152"
+[00:00:07.183] Browser LOG         "memorysetup-job-temp-allocator-block-size=2097152"
 
-[00:00:09.434] Browser LOG         "memorysetup-job-temp-allocator-block-size-background=1048576"
+[00:00:07.183] Browser LOG         "memorysetup-job-temp-allocator-block-size-background=1048576"
 
-[00:00:09.434] Browser LOG         "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+[00:00:07.183] Browser LOG         "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
 
-[00:00:09.434] Browser LOG     Input System module state changed to: Initialized.
+[00:00:07.183] Browser LOG     Input System module state changed to: Initialized.
 
-[00:00:09.434] Browser LOG     [Physics::Module] Initialized fallback backend.
+[00:00:07.183] Browser LOG     [Physics::Module] Initialized fallback backend.
 
-[00:00:09.434] Browser LOG     [Physics::Module] Id: 0xdecafbad
+[00:00:07.183] Browser LOG     [Physics::Module] Id: 0xdecafbad
 
-[00:00:09.434] Browser LOG     Loading player data from data.unity3d
+[00:00:07.183] Browser LOG     Loading player data from data.unity3d
 
-[00:00:09.434] Browser LOG     Initialize engine version: 6000.2.10f1 (d3d30d158480)
+[00:00:07.183] Browser LOG     Initialize engine version: 6000.2.10f1 (d3d30d158480)
 
-[00:00:09.434] Browser LOG     [Subsystems] Discovering subsystems at path UnitySubsystems
+[00:00:07.183] Browser LOG     [Subsystems] Discovering subsystems at path UnitySubsystems
 
-[00:00:09.434] Browser LOG     Creating WebGL 2.0 context.
-[00:00:09.434] Browser LOG     Renderer: WebKit WebGL
+[00:00:07.183] Browser LOG     Creating WebGL 2.0 context.
+[00:00:07.183] Browser LOG     Renderer: WebKit WebGL
 
-[00:00:09.434] Browser LOG     Vendor:   WebKit
+[00:00:07.183] Browser LOG     Vendor:   WebKit
 
-[00:00:09.434] Browser LOG     Version:  OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))
+[00:00:07.183] Browser LOG     Version:  OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))
 
-[00:00:09.434] Browser LOG     GLES:     3
+[00:00:07.183] Browser LOG     GLES:     3
 
-[00:00:09.434] Browser LOG      EXT_clip_control EXT_color_buffer_float EXT_color_buffer_half_float EXT_conservative_depth EXT_depth_clamp EXT_disjoint_timer_query_webgl2 EXT_float_blend EXT_polygon_offset_clamp EXT_render_snorm EXT_texture_compression_bptc EXT_texture_compression_rgtc EXT_texture_filter_anisotropic EXT_texture_mirror_clamp_to_edge EXT_texture_norm16 KHR_parallel_shader_compile NV_shader_noperspective_interpolation OES_draw_buffers_indexed OES_sample_variables OES_shader_multisample_interpolation OES_texture_float_linear OVR_multiview2 WEBGL_blend_func_extended WEBGL_clip_cull_distance WEBGL_compressed_texture_s3tc WEBGL_compressed_texture_s3tc_srgb WEBGL_debug_renderer_info WEBGL_debug_shaders WEBGL_lose_context WEBGL_multi_draw WEBGL_polygon_mode WEBGL_provoking_vertex WEBGL_stencil_texturing GL_EXT_clip_control GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_conservative_depth GL_EXT_depth_clamp GL_EXT_disjoint_timer_query_webgl2 GL_EXT_float_blend GL_EXT_polygon_offset_clamp GL_EXT_render_snorm GL_EXT_
+[00:00:07.183] Browser LOG      EXT_clip_control EXT_color_buffer_float EXT_color_buffer_half_float EXT_conservative_depth EXT_depth_clamp EXT_disjoint_timer_query_webgl2 EXT_float_blend EXT_polygon_offset_clamp EXT_render_snorm EXT_texture_compression_bptc EXT_texture_compression_rgtc EXT_texture_filter_anisotropic EXT_texture_mirror_clamp_to_edge EXT_texture_norm16 KHR_parallel_shader_compile NV_shader_noperspective_interpolation OES_draw_buffers_indexed OES_sample_variables OES_shader_multisample_interpolation OES_texture_float_linear OVR_multiview2 WEBGL_blend_func_extended WEBGL_clip_cull_distance WEBGL_compressed_texture_s3tc WEBGL_compressed_texture_s3tc_srgb WEBGL_debug_renderer_info WEBGL_debug_shaders WEBGL_lose_context WEBGL_multi_draw WEBGL_polygon_mode WEBGL_provoking_vertex WEBGL_stencil_texturing GL_EXT_clip_control GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_conservative_depth GL_EXT_depth_clamp GL_EXT_disjoint_timer_query_webgl2 GL_EXT_float_blend GL_EXT_polygon_offset_clamp GL_EXT_render_snorm GL_EXT_
 
-[00:00:09.434] Browser LOG     texture_compression_bptc GL_EXT_texture_compression_rgtc GL_EXT_texture_filter_anisotropic GL_EXT_texture_mirror_clamp_to_edge GL_EXT_texture_norm16 GL_KHR_parallel_shader_compile GL_NV_shader_noperspective_interpolation GL_OES_draw_buffers_indexed GL_OES_sample_variables GL_OES_shader_multisample_interpolation GL_OES_texture_float_linear GL_OVR_multiview2 GL_WEBGL_blend_func_extended GL_WEBGL_clip_cull_distance GL_WEBGL_compressed_texture_s3tc GL_WEBGL_compressed_texture_s3tc_srgb GL_WEBGL_debug_renderer_info GL_WEBGL_debug_shaders GL_WEBGL_lose_context GL_WEBGL_multi_draw GL_WEBGL_polygon_mode GL_WEBGL_provoking_vertex GL_WEBGL_stencil_texturing
+[00:00:07.183] Browser LOG     texture_compression_bptc GL_EXT_texture_compression_rgtc GL_EXT_texture_filter_anisotropic GL_EXT_texture_mirror_clamp_to_edge GL_EXT_texture_norm16 GL_KHR_parallel_shader_compile GL_NV_shader_noperspective_interpolation GL_OES_draw_buffers_indexed GL_OES_sample_variables GL_OES_shader_multisample_interpolation GL_OES_texture_float_linear GL_OVR_multiview2 GL_WEBGL_blend_func_extended GL_WEBGL_clip_cull_distance GL_WEBGL_compressed_texture_s3tc GL_WEBGL_compressed_texture_s3tc_srgb GL_WEBGL_debug_renderer_info GL_WEBGL_debug_shaders GL_WEBGL_lose_context GL_WEBGL_multi_draw GL_WEBGL_polygon_mode GL_WEBGL_provoking_vertex GL_WEBGL_stencil_texturing
 
-[00:00:09.434] Browser LOG     OPENGL LOG: Creating OpenGL ES 3.0 graphics device ; Context level  <OpenGL ES 3.0> ; Context handle 1
+[00:00:07.183] Browser LOG     OPENGL LOG: Creating OpenGL ES 3.0 graphics device ; Context level  <OpenGL ES 3.0> ; Context handle 1
 
-[00:00:09.434] Browser LOG     [Physics::Module] Selected backend.
+[00:00:07.183] Browser LOG     [Physics::Module] Selected backend.
 
-[00:00:09.434] Browser LOG     [Physics::Module] Name: PhysX
+[00:00:07.183] Browser LOG     [Physics::Module] Name: PhysX
 
-[00:00:09.434] Browser LOG     [Physics::Module] Id: 0xf2b8ea05
+[00:00:07.183] Browser LOG     [Physics::Module] Id: 0xf2b8ea05
 
-[00:00:09.434] Browser LOG     [Physics::Module] SDK Version: 4.1.2
+[00:00:07.183] Browser LOG     [Physics::Module] SDK Version: 4.1.2
 
-[00:00:09.434] Browser LOG     [Physics::Module] Integration Version: 1.0.0
+[00:00:07.183] Browser LOG     [Physics::Module] Integration Version: 1.0.0
 
-[00:00:09.434] Browser LOG     [Physics::Module] Threading Mode: Single-Threaded
+[00:00:07.183] Browser LOG     [Physics::Module] Threading Mode: Single-Threaded
 
-[00:00:09.434] Browser LOG     ERROR: Shader 
-[00:00:09.434] Browser LOG     Hidden/CoreSRP/CoreCopy shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+[00:00:07.183] Browser LOG     ERROR: Shader 
+[00:00:07.183] Browser LOG     Hidden/CoreSRP/CoreCopy shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+
+[00:00:07.183] Browser LOG     ERROR: Shader 
+[00:00:07.183] Browser LOG     Hidden/Universal Render Pipeline/StencilDitherMaskSeed shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+
+[00:00:07.183] Browser LOG     ERROR: Shader 
+[00:00:07.183] Browser LOG     Hidden/Universal/HDRDebugView shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+
+[00:00:07.183] Browser LOG     Input System initialize...
+
+[00:00:07.183] Browser LOG     UnloadTime: 0.500000 ms
+
+[00:00:07.183] Browser WARN    Failed to create agent because there is no valid NavMesh
+
+[00:00:07.183] Browser WARN    Failed to create agent because there is no valid NavMesh
+
+[00:00:07.183] Browser WARN    Failed to create agent because there is no valid NavMesh
+
+[00:00:07.183] Browser WARN    Failed to create agent because there is no valid NavMesh
+
+[00:00:07.668] Browser LOG     Audio context resumed after 0.891 seconds.
+[00:00:09.502] Browser LOG     RenderGraph is now enabled.
+
+[00:04:48.094] Server  LOG      ✓ Compiled in 64ms
+[00:06:52.075] Server  LOG      ✓ Compiled in 52ms
+[00:07:02.078] Server  LOG      ✓ Compiled in 52ms
+[00:07:17.827] Server  LOG      ✓ Compiled in 52ms
+[00:07:42.241] Server  LOG      ✓ Compiled in 56ms
+[00:08:38.754] Server  LOG      ✓ Compiled in 46ms
+[00:11:37.252] Server  LOG      ✓ Compiled in 44ms
+[00:13:57.825] Server  LOG      ✓ Compiled in 50ms
+[00:14:12.351] Server  LOG      ✓ Compiled in 45ms
+[00:14:22.706] Server  LOG      ✓ Compiled in 45ms
+[00:14:28.379] Server  LOG      ✓ Compiled in 42ms
+[00:14:49.147] Server  LOG      ✓ Compiled in 51ms
+[00:14:59.021] Server  LOG      ✓ Compiled in 45ms
+[00:17:26.208] Server  LOG      ✓ Compiled in 41ms
+[00:17:34.315] Server  LOG      ✓ Compiled in 51ms
+[00:20:27.486] Server  LOG      ✓ Compiled in 51ms
+[00:20:28.265] Browser ERROR   ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 0
+
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+[00:20:38.261] Browser ERROR   ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 0
+
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+[00:20:38.261] Browser ERROR   ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 0
+
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+[00:21:20.266] Browser ERROR   ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 0
+
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+[00:21:49.587] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
+
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
+
+
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:49.588] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
+
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
+
+
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:49.589] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
+
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
+
+
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
 
-[00:00:09.434] Browser LOG     ERROR: Shader 
-[00:00:09.434] Browser LOG     Hidden/Universal Render Pipeline/StencilDitherMaskSeed shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+[00:21:49.590] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
+
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
+
 
-[00:00:09.434] Browser LOG     ERROR: Shader 
-[00:00:09.434] Browser LOG     Hidden/Universal/HDRDebugView shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
 
-[00:00:09.434] Browser LOG     Input System initialize...
 
-[00:00:09.434] Browser LOG     UnloadTime: 0.400000 ms
+[00:21:49.599] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
+
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:00:09.434] Browser WARN    Failed to create agent because there is no valid NavMesh
 
-[00:00:09.434] Browser WARN    Failed to create agent because there is no valid NavMesh
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:00:09.434] Browser WARN    Failed to create agent because there is no valid NavMesh
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:00:09.434] Browser WARN    Failed to create agent because there is no valid NavMesh
+https://nextjs.org/docs/messages/module-not-found
 
-[00:00:14.186] Browser LOG     RenderGraph is now enabled.
 
-[00:00:34.805] Browser LOG     Audio context resumed after 25.777 seconds.
-[00:00:39.649] Server  LOG      ✓ Compiled in 94ms
-[00:02:33.263] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:33.525] Browser LOG     Loading Unity from: /unity-build/Build/Builds.loader.js
-[00:02:33.525] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:02:33.525] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:02:33.525] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763484295032}
-[00:02:33.525] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.framework.js.unityweb" file.
-[00:02:33.525] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.wasm.unityweb" file.
-[00:02:33.525] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.data.unityweb" file.
-[00:02:33.638] Browser LOG     [UnityCache] 'http://localhost:3000/unity-build/Build/Builds.data.unityweb' successfully downloaded and stored in the browser cache
-[00:02:34.998] Browser LOG     [UnityMemory] Configuration Parameters - Can be set up in boot.config
+[00:21:49.600] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:02:34.998] Browser LOG         "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:02:34.998] Browser LOG         "memorysetup-allocator-temp-initial-block-size-main=262144"
 
-[00:02:34.998] Browser LOG         "memorysetup-allocator-temp-initial-block-size-worker=262144"
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG         "memorysetup-temp-allocator-size-audio-worker=65536"
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG         "memorysetup-temp-allocator-size-background-worker=32768"
+https://nextjs.org/docs/messages/module-not-found
 
-[00:02:34.998] Browser LOG         "memorysetup-bucket-allocator-granularity=16"
 
-[00:02:34.998] Browser LOG         "memorysetup-bucket-allocator-bucket-count=8"
+[00:21:49.601] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:02:34.998] Browser LOG         "memorysetup-bucket-allocator-block-size=4194304"
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:02:34.998] Browser LOG         "memorysetup-bucket-allocator-block-count=1"
 
-[00:02:34.998] Browser LOG         "memorysetup-main-allocator-block-size=16777216"
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG         "memorysetup-thread-allocator-block-size=16777216"
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG         "memorysetup-gfx-main-allocator-block-size=16777216"
+https://nextjs.org/docs/messages/module-not-found
 
-[00:02:34.998] Browser LOG         "memorysetup-gfx-thread-allocator-block-size=16777216"
 
-[00:02:34.998] Browser LOG         "memorysetup-cache-allocator-block-size=4194304"
+[00:21:49.602] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:02:34.998] Browser LOG         "memorysetup-typetree-allocator-block-size=2097152"
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:02:34.998] Browser LOG         "memorysetup-profiler-bucket-allocator-granularity=16"
 
-[00:02:34.998] Browser LOG         "memorysetup-profiler-bucket-allocator-bucket-count=8"
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG         "memorysetup-profiler-bucket-allocator-block-size=4194304"
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG         "memorysetup-profiler-bucket-allocator-block-count=1"
+https://nextjs.org/docs/messages/module-not-found
 
-[00:02:34.998] Browser LOG         "memorysetup-profiler-allocator-block-size=16777216"
 
-[00:02:34.998] Browser LOG         "memorysetup-profiler-editor-allocator-block-size=1048576"
+[00:21:49.603] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:02:34.998] Browser LOG         "memorysetup-temp-allocator-size-main=4194304"
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:02:34.998] Browser LOG         "memorysetup-job-temp-allocator-block-size=2097152"
 
-[00:02:34.998] Browser LOG         "memorysetup-job-temp-allocator-block-size-background=1048576"
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG         "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG     Input System module state changed to: Initialized.
+https://nextjs.org/docs/messages/module-not-found
 
-[00:02:34.998] Browser LOG     [Physics::Module] Initialized fallback backend.
 
-[00:02:34.998] Browser LOG     [Physics::Module] Id: 0xdecafbad
+[00:21:49.604] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:02:34.998] Browser LOG     Loading player data from data.unity3d
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:02:34.998] Browser LOG     Initialize engine version: 6000.2.10f1 (d3d30d158480)
 
-[00:02:34.998] Browser LOG     [Subsystems] Discovering subsystems at path UnitySubsystems
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG     Creating WebGL 2.0 context.
-[00:02:34.998] Browser LOG     Renderer: WebKit WebGL
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG     Vendor:   WebKit
+https://nextjs.org/docs/messages/module-not-found
 
-[00:02:34.998] Browser LOG     Version:  OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))
 
-[00:02:34.998] Browser LOG     GLES:     3
+[00:21:49.605] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:02:34.998] Browser LOG      EXT_clip_control EXT_color_buffer_float EXT_color_buffer_half_float EXT_conservative_depth EXT_depth_clamp EXT_disjoint_timer_query_webgl2 EXT_float_blend EXT_polygon_offset_clamp EXT_render_snorm EXT_texture_compression_bptc EXT_texture_compression_rgtc EXT_texture_filter_anisotropic EXT_texture_mirror_clamp_to_edge EXT_texture_norm16 KHR_parallel_shader_compile NV_shader_noperspective_interpolation OES_draw_buffers_indexed OES_sample_variables OES_shader_multisample_interpolation OES_texture_float_linear OVR_multiview2 WEBGL_blend_func_extended WEBGL_clip_cull_distance WEBGL_compressed_texture_s3tc WEBGL_compressed_texture_s3tc_srgb WEBGL_debug_renderer_info WEBGL_debug_shaders WEBGL_lose_context WEBGL_multi_draw WEBGL_polygon_mode WEBGL_provoking_vertex WEBGL_stencil_texturing GL_EXT_clip_control GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_conservative_depth GL_EXT_depth_clamp GL_EXT_disjoint_timer_query_webgl2 GL_EXT_float_blend GL_EXT_polygon_offset_clamp GL_EXT_render_snorm GL_EXT_
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:02:34.998] Browser LOG     texture_compression_bptc GL_EXT_texture_compression_rgtc GL_EXT_texture_filter_anisotropic GL_EXT_texture_mirror_clamp_to_edge GL_EXT_texture_norm16 GL_KHR_parallel_shader_compile GL_NV_shader_noperspective_interpolation GL_OES_draw_buffers_indexed GL_OES_sample_variables GL_OES_shader_multisample_interpolation GL_OES_texture_float_linear GL_OVR_multiview2 GL_WEBGL_blend_func_extended GL_WEBGL_clip_cull_distance GL_WEBGL_compressed_texture_s3tc GL_WEBGL_compressed_texture_s3tc_srgb GL_WEBGL_debug_renderer_info GL_WEBGL_debug_shaders GL_WEBGL_lose_context GL_WEBGL_multi_draw GL_WEBGL_polygon_mode GL_WEBGL_provoking_vertex GL_WEBGL_stencil_texturing
 
-[00:02:34.998] Browser LOG     OPENGL LOG: Creating OpenGL ES 3.0 graphics device ; Context level  <OpenGL ES 3.0> ; Context handle 1
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG     [Physics::Module] Selected backend.
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG     [Physics::Module] Name: PhysX
+https://nextjs.org/docs/messages/module-not-found
 
-[00:02:34.998] Browser LOG     [Physics::Module] Id: 0xf2b8ea05
 
-[00:02:34.998] Browser LOG     [Physics::Module] SDK Version: 4.1.2
+[00:21:49.606] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:02:34.998] Browser LOG     [Physics::Module] Integration Version: 1.0.0
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:02:34.998] Browser LOG     [Physics::Module] Threading Mode: Single-Threaded
 
-[00:02:34.998] Browser LOG     ERROR: Shader 
-[00:02:34.998] Browser LOG     Hidden/CoreSRP/CoreCopy shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG     ERROR: Shader 
-[00:02:34.998] Browser LOG     Hidden/Universal Render Pipeline/StencilDitherMaskSeed shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG     ERROR: Shader 
-[00:02:34.998] Browser LOG     Hidden/Universal/HDRDebugView shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+https://nextjs.org/docs/messages/module-not-found
 
-[00:02:34.998] Browser LOG     Input System initialize...
 
-[00:02:34.998] Browser LOG     UnloadTime: 0.600000 ms
+[00:21:49.607] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:02:34.998] Browser WARN    Failed to create agent because there is no valid NavMesh
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:02:34.998] Browser WARN    Failed to create agent because there is no valid NavMesh
 
-[00:02:34.998] Browser WARN    Failed to create agent because there is no valid NavMesh
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser WARN    Failed to create agent because there is no valid NavMesh
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:02:34.998] Browser LOG     Audio context resumed after 0.486 seconds.
-[00:02:37.252] Browser LOG     RenderGraph is now enabled.
+https://nextjs.org/docs/messages/module-not-found
 
-[00:03:47.223] Server  LOG      ✓ Compiled in 62ms
-[00:03:54.885] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:55.156] Browser LOG     Loading Unity from: /unity-build/Build/Builds.loader.js
-[00:03:55.156] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:03:55.156] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:03:55.156] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763484376671}
-[00:03:55.156] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.framework.js.unityweb" file.
-[00:03:55.156] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.wasm.unityweb" file.
-[00:03:55.156] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.data.unityweb" file.
-[00:03:55.261] Browser LOG     [UnityCache] 'http://localhost:3000/unity-build/Build/Builds.data.unityweb' successfully downloaded and stored in the browser cache
-[00:03:56.622] Browser LOG     [UnityMemory] Configuration Parameters - Can be set up in boot.config
 
-[00:03:56.622] Browser LOG         "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+[00:21:49.608] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:03:56.622] Browser LOG         "memorysetup-allocator-temp-initial-block-size-main=262144"
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:03:56.622] Browser LOG         "memorysetup-allocator-temp-initial-block-size-worker=262144"
 
-[00:03:56.622] Browser LOG         "memorysetup-temp-allocator-size-audio-worker=65536"
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG         "memorysetup-temp-allocator-size-background-worker=32768"
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG         "memorysetup-bucket-allocator-granularity=16"
+https://nextjs.org/docs/messages/module-not-found
 
-[00:03:56.622] Browser LOG         "memorysetup-bucket-allocator-bucket-count=8"
 
-[00:03:56.622] Browser LOG         "memorysetup-bucket-allocator-block-size=4194304"
+[00:21:49.609] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:03:56.622] Browser LOG         "memorysetup-bucket-allocator-block-count=1"
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:03:56.622] Browser LOG         "memorysetup-main-allocator-block-size=16777216"
 
-[00:03:56.622] Browser LOG         "memorysetup-thread-allocator-block-size=16777216"
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG         "memorysetup-gfx-main-allocator-block-size=16777216"
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG         "memorysetup-gfx-thread-allocator-block-size=16777216"
+https://nextjs.org/docs/messages/module-not-found
 
-[00:03:56.622] Browser LOG         "memorysetup-cache-allocator-block-size=4194304"
 
-[00:03:56.622] Browser LOG         "memorysetup-typetree-allocator-block-size=2097152"
+[00:21:49.610] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:03:56.622] Browser LOG         "memorysetup-profiler-bucket-allocator-granularity=16"
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:03:56.622] Browser LOG         "memorysetup-profiler-bucket-allocator-bucket-count=8"
 
-[00:03:56.622] Browser LOG         "memorysetup-profiler-bucket-allocator-block-size=4194304"
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG         "memorysetup-profiler-bucket-allocator-block-count=1"
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG         "memorysetup-profiler-allocator-block-size=16777216"
+https://nextjs.org/docs/messages/module-not-found
 
-[00:03:56.622] Browser LOG         "memorysetup-profiler-editor-allocator-block-size=1048576"
 
-[00:03:56.622] Browser LOG         "memorysetup-temp-allocator-size-main=4194304"
+[00:21:49.611] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:03:56.622] Browser LOG         "memorysetup-job-temp-allocator-block-size=2097152"
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:03:56.622] Browser LOG         "memorysetup-job-temp-allocator-block-size-background=1048576"
 
-[00:03:56.622] Browser LOG         "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG     Input System module state changed to: Initialized.
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG     [Physics::Module] Initialized fallback backend.
+https://nextjs.org/docs/messages/module-not-found
 
-[00:03:56.622] Browser LOG     [Physics::Module] Id: 0xdecafbad
 
-[00:03:56.622] Browser LOG     Loading player data from data.unity3d
+[00:21:49.612] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:03:56.622] Browser LOG     Initialize engine version: 6000.2.10f1 (d3d30d158480)
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:03:56.622] Browser LOG     [Subsystems] Discovering subsystems at path UnitySubsystems
 
-[00:03:56.622] Browser LOG     Creating WebGL 2.0 context.
-[00:03:56.622] Browser LOG     Renderer: WebKit WebGL
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG     Vendor:   WebKit
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG     Version:  OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))
+https://nextjs.org/docs/messages/module-not-found
 
-[00:03:56.622] Browser LOG     GLES:     3
 
-[00:03:56.622] Browser LOG      EXT_clip_control EXT_color_buffer_float EXT_color_buffer_half_float EXT_conservative_depth EXT_depth_clamp EXT_disjoint_timer_query_webgl2 EXT_float_blend EXT_polygon_offset_clamp EXT_render_snorm EXT_texture_compression_bptc EXT_texture_compression_rgtc EXT_texture_filter_anisotropic EXT_texture_mirror_clamp_to_edge EXT_texture_norm16 KHR_parallel_shader_compile NV_shader_noperspective_interpolation OES_draw_buffers_indexed OES_sample_variables OES_shader_multisample_interpolation OES_texture_float_linear OVR_multiview2 WEBGL_blend_func_extended WEBGL_clip_cull_distance WEBGL_compressed_texture_s3tc WEBGL_compressed_texture_s3tc_srgb WEBGL_debug_renderer_info WEBGL_debug_shaders WEBGL_lose_context WEBGL_multi_draw WEBGL_polygon_mode WEBGL_provoking_vertex WEBGL_stencil_texturing GL_EXT_clip_control GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_conservative_depth GL_EXT_depth_clamp GL_EXT_disjoint_timer_query_webgl2 GL_EXT_float_blend GL_EXT_polygon_offset_clamp GL_EXT_render_snorm GL_EXT_
+[00:21:49.613] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:03:56.622] Browser LOG     texture_compression_bptc GL_EXT_texture_compression_rgtc GL_EXT_texture_filter_anisotropic GL_EXT_texture_mirror_clamp_to_edge GL_EXT_texture_norm16 GL_KHR_parallel_shader_compile GL_NV_shader_noperspective_interpolation GL_OES_draw_buffers_indexed GL_OES_sample_variables GL_OES_shader_multisample_interpolation GL_OES_texture_float_linear GL_OVR_multiview2 GL_WEBGL_blend_func_extended GL_WEBGL_clip_cull_distance GL_WEBGL_compressed_texture_s3tc GL_WEBGL_compressed_texture_s3tc_srgb GL_WEBGL_debug_renderer_info GL_WEBGL_debug_shaders GL_WEBGL_lose_context GL_WEBGL_multi_draw GL_WEBGL_polygon_mode GL_WEBGL_provoking_vertex GL_WEBGL_stencil_texturing
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:03:56.622] Browser LOG     OPENGL LOG: Creating OpenGL ES 3.0 graphics device ; Context level  <OpenGL ES 3.0> ; Context handle 1
 
-[00:03:56.622] Browser LOG     [Physics::Module] Selected backend.
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG     [Physics::Module] Name: PhysX
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG     [Physics::Module] Id: 0xf2b8ea05
+https://nextjs.org/docs/messages/module-not-found
 
-[00:03:56.622] Browser LOG     [Physics::Module] SDK Version: 4.1.2
 
-[00:03:56.622] Browser LOG     [Physics::Module] Integration Version: 1.0.0
+[00:21:49.613] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:03:56.622] Browser LOG     [Physics::Module] Threading Mode: Single-Threaded
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:03:56.622] Browser LOG     ERROR: Shader 
-[00:03:56.622] Browser LOG     Hidden/CoreSRP/CoreCopy shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
 
-[00:03:56.622] Browser LOG     ERROR: Shader 
-[00:03:56.622] Browser LOG     Hidden/Universal Render Pipeline/StencilDitherMaskSeed shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG     ERROR: Shader 
-[00:03:56.622] Browser LOG     Hidden/Universal/HDRDebugView shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG     Input System initialize...
+https://nextjs.org/docs/messages/module-not-found
 
-[00:03:56.622] Browser LOG     UnloadTime: 0.500000 ms
 
-[00:03:56.622] Browser WARN    Failed to create agent because there is no valid NavMesh
+[00:21:49.614] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:03:56.622] Browser WARN    Failed to create agent because there is no valid NavMesh
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:03:56.622] Browser WARN    Failed to create agent because there is no valid NavMesh
 
-[00:03:56.622] Browser WARN    Failed to create agent because there is no valid NavMesh
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:03:56.622] Browser LOG     Audio context resumed after 0.496 seconds.
-[00:03:58.871] Browser LOG     RenderGraph is now enabled.
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:06:07.124] Server  LOG      ✓ Compiled in 67ms
-[00:06:22.337] Server  LOG      ✓ Compiled in 43ms
-[00:19:12.121] Server  LOG      ✓ Compiled in 44ms
-[00:19:29.003] Server  LOG      ✓ Compiled in 45ms
-[00:20:02.107] Server  LOG      ✓ Compiled in 47ms
-[00:20:06.753] Server  LOG      ✓ Compiled in 42ms
-[00:20:13.414] Server  LOG      ✓ Compiled in 41ms
-[00:20:16.872] Server  LOG      ✓ Compiled in 43ms
-[00:20:55.309] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:55.587] Browser LOG     Loading Unity from: /unity-build/Build/Builds.loader.js
-[00:20:55.587] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:20:55.587] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:20:55.587] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763485397107}
-[00:20:55.587] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.framework.js.unityweb" file.
-[00:20:55.587] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.wasm.unityweb" file.
-[00:20:55.587] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.data.unityweb" file.
-[00:20:55.698] Browser LOG     [UnityCache] 'http://localhost:3000/unity-build/Build/Builds.data.unityweb' successfully downloaded and stored in the browser cache
-[00:20:57.116] Browser LOG     [UnityMemory] Configuration Parameters - Can be set up in boot.config
+https://nextjs.org/docs/messages/module-not-found
 
-[00:20:57.116] Browser LOG         "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
 
-[00:20:57.116] Browser LOG         "memorysetup-allocator-temp-initial-block-size-main=262144"
+[00:21:49.615] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:20:57.116] Browser LOG         "memorysetup-allocator-temp-initial-block-size-worker=262144"
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:20:57.116] Browser LOG         "memorysetup-temp-allocator-size-audio-worker=65536"
 
-[00:20:57.116] Browser LOG         "memorysetup-temp-allocator-size-background-worker=32768"
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG         "memorysetup-bucket-allocator-granularity=16"
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG         "memorysetup-bucket-allocator-bucket-count=8"
+https://nextjs.org/docs/messages/module-not-found
 
-[00:20:57.116] Browser LOG         "memorysetup-bucket-allocator-block-size=4194304"
 
-[00:20:57.116] Browser LOG         "memorysetup-bucket-allocator-block-count=1"
+[00:21:49.616] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:20:57.116] Browser LOG         "memorysetup-main-allocator-block-size=16777216"
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:20:57.116] Browser LOG         "memorysetup-thread-allocator-block-size=16777216"
 
-[00:20:57.116] Browser LOG         "memorysetup-gfx-main-allocator-block-size=16777216"
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG         "memorysetup-gfx-thread-allocator-block-size=16777216"
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG         "memorysetup-cache-allocator-block-size=4194304"
+https://nextjs.org/docs/messages/module-not-found
 
-[00:20:57.116] Browser LOG         "memorysetup-typetree-allocator-block-size=2097152"
 
-[00:20:57.116] Browser LOG         "memorysetup-profiler-bucket-allocator-granularity=16"
+[00:21:49.616] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:20:57.116] Browser LOG         "memorysetup-profiler-bucket-allocator-bucket-count=8"
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:20:57.116] Browser LOG         "memorysetup-profiler-bucket-allocator-block-size=4194304"
 
-[00:20:57.116] Browser LOG         "memorysetup-profiler-bucket-allocator-block-count=1"
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG         "memorysetup-profiler-allocator-block-size=16777216"
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG         "memorysetup-profiler-editor-allocator-block-size=1048576"
+https://nextjs.org/docs/messages/module-not-found
 
-[00:20:57.116] Browser LOG         "memorysetup-temp-allocator-size-main=4194304"
 
-[00:20:57.116] Browser LOG         "memorysetup-job-temp-allocator-block-size=2097152"
+[00:21:49.618] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:20:57.116] Browser LOG         "memorysetup-job-temp-allocator-block-size-background=1048576"
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:20:57.116] Browser LOG         "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
 
-[00:20:57.116] Browser LOG     Input System module state changed to: Initialized.
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG     [Physics::Module] Initialized fallback backend.
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG     [Physics::Module] Id: 0xdecafbad
+https://nextjs.org/docs/messages/module-not-found
 
-[00:20:57.116] Browser LOG     Loading player data from data.unity3d
 
-[00:20:57.116] Browser LOG     Initialize engine version: 6000.2.10f1 (d3d30d158480)
+[00:21:49.619] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:20:57.116] Browser LOG     [Subsystems] Discovering subsystems at path UnitySubsystems
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:20:57.116] Browser LOG     Creating WebGL 2.0 context.
-[00:20:57.116] Browser LOG     Renderer: WebKit WebGL
 
-[00:20:57.116] Browser LOG     Vendor:   WebKit
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG     Version:  OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG     GLES:     3
+https://nextjs.org/docs/messages/module-not-found
 
-[00:20:57.116] Browser LOG      EXT_clip_control EXT_color_buffer_float EXT_color_buffer_half_float EXT_conservative_depth EXT_depth_clamp EXT_disjoint_timer_query_webgl2 EXT_float_blend EXT_polygon_offset_clamp EXT_render_snorm EXT_texture_compression_bptc EXT_texture_compression_rgtc EXT_texture_filter_anisotropic EXT_texture_mirror_clamp_to_edge EXT_texture_norm16 KHR_parallel_shader_compile NV_shader_noperspective_interpolation OES_draw_buffers_indexed OES_sample_variables OES_shader_multisample_interpolation OES_texture_float_linear OVR_multiview2 WEBGL_blend_func_extended WEBGL_clip_cull_distance WEBGL_compressed_texture_s3tc WEBGL_compressed_texture_s3tc_srgb WEBGL_debug_renderer_info WEBGL_debug_shaders WEBGL_lose_context WEBGL_multi_draw WEBGL_polygon_mode WEBGL_provoking_vertex WEBGL_stencil_texturing GL_EXT_clip_control GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_conservative_depth GL_EXT_depth_clamp GL_EXT_disjoint_timer_query_webgl2 GL_EXT_float_blend GL_EXT_polygon_offset_clamp GL_EXT_render_snorm GL_EXT_
 
-[00:20:57.116] Browser LOG     texture_compression_bptc GL_EXT_texture_compression_rgtc GL_EXT_texture_filter_anisotropic GL_EXT_texture_mirror_clamp_to_edge GL_EXT_texture_norm16 GL_KHR_parallel_shader_compile GL_NV_shader_noperspective_interpolation GL_OES_draw_buffers_indexed GL_OES_sample_variables GL_OES_shader_multisample_interpolation GL_OES_texture_float_linear GL_OVR_multiview2 GL_WEBGL_blend_func_extended GL_WEBGL_clip_cull_distance GL_WEBGL_compressed_texture_s3tc GL_WEBGL_compressed_texture_s3tc_srgb GL_WEBGL_debug_renderer_info GL_WEBGL_debug_shaders GL_WEBGL_lose_context GL_WEBGL_multi_draw GL_WEBGL_polygon_mode GL_WEBGL_provoking_vertex GL_WEBGL_stencil_texturing
+[00:21:49.620] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:20:57.116] Browser LOG     OPENGL LOG: Creating OpenGL ES 3.0 graphics device ; Context level  <OpenGL ES 3.0> ; Context handle 1
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:20:57.116] Browser LOG     [Physics::Module] Selected backend.
 
-[00:20:57.116] Browser LOG     [Physics::Module] Name: PhysX
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG     [Physics::Module] Id: 0xf2b8ea05
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG     [Physics::Module] SDK Version: 4.1.2
+https://nextjs.org/docs/messages/module-not-found
 
-[00:20:57.116] Browser LOG     [Physics::Module] Integration Version: 1.0.0
 
-[00:20:57.116] Browser LOG     [Physics::Module] Threading Mode: Single-Threaded
+[00:21:49.620] Server  ERROR    ⨯ ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:20:57.116] Browser LOG     ERROR: Shader 
-[00:20:57.116] Browser LOG     Hidden/CoreSRP/CoreCopy shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:20:57.116] Browser LOG     ERROR: Shader 
-[00:20:57.116] Browser LOG     Hidden/Universal Render Pipeline/StencilDitherMaskSeed shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
 
-[00:20:57.116] Browser LOG     ERROR: Shader 
-[00:20:57.116] Browser LOG     Hidden/Universal/HDRDebugView shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG     Input System initialize...
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG     UnloadTime: 0.400000 ms
+https://nextjs.org/docs/messages/module-not-found
 
-[00:20:57.116] Browser WARN    Failed to create agent because there is no valid NavMesh
 
-[00:20:57.116] Browser WARN    Failed to create agent because there is no valid NavMesh
+[00:21:49.627] Server  LOG      ✓ Compiled in 54ms
+[00:21:50.264] Browser ERROR   ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/game-development'
+   6 | import HeroSection from '@/components/hero-section'
+   7 | import BackendProjects from '@/components/backend-projects'
+>  8 | import GameDevelopment from '@/components/game-development'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import WebGLShowcase from '@/components/webgl-showcase'
+  10 | import AboutMe from '@/components/about-me'
+  11 | import Footer from '@/components/footer'
 
-[00:20:57.116] Browser WARN    Failed to create agent because there is no valid NavMesh
+Import map: aliased to relative './components/game-development' inside of [project]/Catcafe portfolio/Catcafe-portfolio
 
-[00:20:57.116] Browser WARN    Failed to create agent because there is no valid NavMesh
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
-[00:20:57.116] Browser LOG     Audio context resumed after 0.516 seconds.
-[00:20:59.383] Browser LOG     RenderGraph is now enabled.
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
 
+https://nextjs.org/docs/messages/module-not-found
+[00:22:00.850] Server  LOG      ✓ Compiled in 65ms
+[00:22:01.270] Browser ERROR   ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 0
+
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+[00:22:25.261] Browser ERROR   ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 0
+
+Import traces:
+  Client Component Browser:
+    ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component Browser]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Catcafe portfolio/Catcafe-portfolio/components/game-development.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Client Component SSR]
+    ./Catcafe portfolio/Catcafe-portfolio/app/page.tsx [Server Component]
+[00:23:55.279] Server  LOG      ✓ Compiled in 88ms
+[00:29:36.000] Server  LOG      ✓ Compiled in 49ms
+[00:31:05.716] Server  LOG      ✓ Compiled in 47ms
+[00:33:37.817] Server  LOG      ✓ Compiled in 43ms
+[00:34:01.064] Server  LOG      ✓ Compiled in 43ms
+[00:34:08.546] Server  LOG      ✓ Compiled in 50ms
+[00:34:12.435] Server  LOG      ✓ Compiled in 48ms
+[00:34:15.362] Server  LOG      ✓ Compiled in 50ms
+[00:34:18.172] Server  LOG      ✓ Compiled in 41ms
