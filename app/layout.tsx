@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Cat Café Studio | Backend & Game Developer',
-  description: 'Welcome to my cozy digital café – exploring backend development, game design, and WebGL experiences',
+  title: 'Julian Gaitan Portfolio | Backend & Game Developer',
+  description: 'Welcome to my cozy digital café – exploring backend development and game design',
   generator: 'v0.app',
   icons: {
     icon: [
