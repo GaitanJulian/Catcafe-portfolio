@@ -48,7 +48,7 @@ export default function ContactFooter() {
 
         {/* Footer divider */}
         <div className="py-8 border-t border-amber-700/40 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <p className="text-muted-foreground text-sm">© 2025 My Cozy Cat Café. All rights reserved. Made with warmth ☕</p>
+          <p className="text-muted-foreground text-sm">© 2025 Julian Gaitan. All rights reserved. Made with warmth ☕</p>
           
           {/* Social links with enhanced glow */}
           <div className="flex gap-4">

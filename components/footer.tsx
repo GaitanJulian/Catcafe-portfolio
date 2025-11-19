@@ -102,7 +102,7 @@ export default function Footer({ onNavigate, currentView }: FooterProps) {
         {/* Divider and copyright */}
         <div className="border-t border-amber-700/20 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-muted-foreground/60">
-            <p>Cat Café Studio © 2025</p>
+            <p>Julian Gaitan © 2025</p>
             <button
               onClick={() => onNavigate('hero')}
               className="px-4 py-2 card-glow text-foreground rounded-lg hover-lift-glow text-xs font-semibold"

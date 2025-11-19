@@ -36,27 +36,35 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Catcafe portfolio/Catcafe-portfolio/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 'use client';
 ;
+const tea = '\u{1F375}';
+const catSmiling = '\u{1F63A}';
+const catWink = '\u{1F63C}';
+const catGrin = '\u{1F638}';
+const chair = '\u{1FA91}';
+const paw = '\u{1F43E}';
+const emojiFont = '"Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "EmojiOne Color", sans-serif';
 function FloatingDecorations() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "fixed inset-0 pointer-events-none overflow-hidden",
         style: {
-            zIndex: -5
+            zIndex: 0,
+            fontFamily: emojiFont
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute top-10 left-20 text-4xl animate-float opacity-50 animate-bloom",
-                children: "☕"
+                children: tea
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/floating-decorations.tsx",
-                lineNumber: 7,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute bottom-32 right-24 text-3xl animate-float-reverse opacity-40 animate-bloom",
-                children: "☕"
+                children: tea
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/floating-decorations.tsx",
-                lineNumber: 8,
+                lineNumber: 20,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -64,18 +72,18 @@ function FloatingDecorations() {
                 style: {
                     animationDelay: '1s'
                 },
-                children: "☕"
+                children: tea
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/floating-decorations.tsx",
-                lineNumber: 9,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute top-1/3 right-10 text-5xl animate-float-reverse opacity-60 animate-bloom",
-                children: "🐱"
+                children: catSmiling
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/floating-decorations.tsx",
-                lineNumber: 12,
+                lineNumber: 29,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -83,10 +91,10 @@ function FloatingDecorations() {
                 style: {
                     animationDelay: '0.5s'
                 },
-                children: "🐱"
+                children: catWink
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/floating-decorations.tsx",
-                lineNumber: 13,
+                lineNumber: 30,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -94,18 +102,18 @@ function FloatingDecorations() {
                 style: {
                     animationDelay: '1.5s'
                 },
-                children: "😺"
+                children: catGrin
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/floating-decorations.tsx",
-                lineNumber: 14,
+                lineNumber: 36,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute top-20 right-1/3 text-3xl animate-tilt opacity-35 animate-bloom",
-                children: "🪑"
+                children: chair
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/floating-decorations.tsx",
-                lineNumber: 17,
+                lineNumber: 44,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -113,18 +121,18 @@ function FloatingDecorations() {
                 style: {
                     animationDelay: '0.8s'
                 },
-                children: "🪑"
+                children: chair
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/floating-decorations.tsx",
-                lineNumber: 18,
+                lineNumber: 45,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute top-1/4 left-1/2 text-2xl animate-float opacity-25 animate-bloom",
-                children: "🐾"
+                children: paw
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/floating-decorations.tsx",
-                lineNumber: 21,
+                lineNumber: 53,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -132,10 +140,10 @@ function FloatingDecorations() {
                 style: {
                     animationDelay: '1.2s'
                 },
-                children: "🐾"
+                children: paw
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/floating-decorations.tsx",
-                lineNumber: 22,
+                lineNumber: 54,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -145,7 +153,7 @@ function FloatingDecorations() {
                 }
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/floating-decorations.tsx",
-                lineNumber: 25,
+                lineNumber: 62,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -155,13 +163,13 @@ function FloatingDecorations() {
                 }
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/floating-decorations.tsx",
-                lineNumber: 31,
+                lineNumber: 68,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/floating-decorations.tsx",
-        lineNumber: 5,
+        lineNumber: 14,
         columnNumber: 5
     }, this);
 }
@@ -245,7 +253,7 @@ function HeroSection({ onNavigate }) {
                             className: "text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight text-balance",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "bg-gradient-to-r from-amber-100 via-orange-200 to-amber-100 bg-clip-text text-transparent drop-shadow-lg",
-                                children: "Cat Café Studio"
+                                children: "Julian Gaitan Hernandez"
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/hero-section.tsx",
                                 lineNumber: 45,
@@ -258,7 +266,7 @@ function HeroSection({ onNavigate }) {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-light",
-                            children: "A cozy digital café where backend engineering meets game design. Step in, explore, and feel the warmth of creative work."
+                            children: "Backend Engineer crafting reliable systems and playful interactive experiences"
                         }, void 0, false, {
                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/hero-section.tsx",
                             lineNumber: 51,
@@ -1127,8 +1135,8 @@ function GameDevelopment({ onNavigate }) {
                 'WebGL',
                 'UX'
             ],
-            itchUrl: 'https://google.com',
-            githubUrl: 'https://github.com'
+            itchUrl: 'https://gaitanjulian.itch.io/interactive-portfolio-prototype',
+            githubUrl: 'https://github.com/GaitanJulian/interactivePortfolio'
         },
         {
             title: 'Bootcamp Brawlers',
@@ -1141,8 +1149,8 @@ function GameDevelopment({ onNavigate }) {
                 'C#',
                 'Local Multiplayer'
             ],
-            itchUrl: 'https://google.com',
-            githubUrl: 'https://github.com'
+            itchUrl: 'https://joulesp.itch.io/boot-camp-brawlers',
+            githubUrl: 'https://github.com/GaitanJulian/BootCampBrawlersCodeSamples'
         },
         {
             title: 'Life by Candlelight',
@@ -1155,8 +1163,8 @@ function GameDevelopment({ onNavigate }) {
                 'Lighting',
                 'Level Design'
             ],
-            itchUrl: 'https://google.com',
-            githubUrl: 'https://github.com'
+            itchUrl: 'https://damamapi.itch.io/life-by-candlelight',
+            githubUrl: 'https://github.com/GaitanJulian/UnityIVSecondJam'
         },
         {
             title: 'Xenofurious Sabotage',
@@ -1169,8 +1177,8 @@ function GameDevelopment({ onNavigate }) {
                 '2D',
                 'C#'
             ],
-            itchUrl: 'https://google.com',
-            githubUrl: 'https://github.com'
+            itchUrl: 'https://pi6g.itch.io/xenofurious-sabotage',
+            githubUrl: 'https://github.com/pi6G/XenofuriousSabotage'
         },
         {
             title: 'NanoEscape',
@@ -1183,8 +1191,8 @@ function GameDevelopment({ onNavigate }) {
                 'C#',
                 'Level Design'
             ],
-            itchUrl: 'https://google.com',
-            githubUrl: 'https://github.com'
+            itchUrl: 'https://gaitanjulian.itch.io/nanoescape',
+            githubUrl: 'https://github.com/ZenSeit/FirstJam'
         },
         {
             title: 'Runes Quest',
@@ -1197,8 +1205,8 @@ function GameDevelopment({ onNavigate }) {
                 'UI',
                 'C#'
             ],
-            itchUrl: 'https://google.com',
-            githubUrl: 'https://github.com'
+            itchUrl: 'https://gaitanjulian.itch.io/runes-quest',
+            githubUrl: 'https://github.com/GaitanJulian/CardGame'
         },
         {
             title: 'Dimensional Dream',
@@ -1211,8 +1219,8 @@ function GameDevelopment({ onNavigate }) {
                 'C#',
                 'Jam Game'
             ],
-            itchUrl: 'https://google.com',
-            githubUrl: 'https://github.com'
+            itchUrl: 'https://gaitanjulian.itch.io/dimensional-dream',
+            githubUrl: 'https://github.com/GaitanJulian/Kenney2023'
         }
     ];
     const [centerIndex, setCenterIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
@@ -2282,7 +2290,9 @@ __turbopack_context__.s([
     ()=>AboutMe
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Catcafe portfolio/Catcafe-portfolio/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Catcafe portfolio/Catcafe-portfolio/node_modules/next/image.js [app-client] (ecmascript)");
 'use client';
+;
 ;
 function AboutMe({ onNavigate }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2295,7 +2305,7 @@ function AboutMe({ onNavigate }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                lineNumber: 12,
+                lineNumber: 13,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2305,7 +2315,7 @@ function AboutMe({ onNavigate }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                lineNumber: 16,
+                lineNumber: 20,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2315,7 +2325,7 @@ function AboutMe({ onNavigate }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                lineNumber: 22,
+                lineNumber: 26,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2325,94 +2335,154 @@ function AboutMe({ onNavigate }) {
                         className: "text-center mb-12",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-5xl sm:text-6xl font-bold mb-4 bg-gradient-to-r from-amber-100 to-orange-200 bg-clip-text text-transparent",
-                            children: "Welcome to My Café"
+                            children: "Welcome to My café"
                         }, void 0, false, {
                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                            lineNumber: 32,
+                            lineNumber: 35,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                        lineNumber: 31,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid md:grid-cols-2 gap-8 mb-12",
+                        className: "grid md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] gap-8 items-center mb-12",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "card-glow p-8 rounded-2xl hover-lift-glow",
+                                className: "space-y-8",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                        className: "text-xl font-bold text-foreground mb-4 flex items-center gap-3",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "card-glow p-8 rounded-2xl hover-lift-glow",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-3xl",
-                                                children: "🎯"
-                                            }, void 0, false, {
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                className: "text-xl font-bold text-foreground mb-4 flex items-center gap-3",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-3xl",
+                                                        children: "🎯"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
+                                                        lineNumber: 44,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    "What I Do"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                                                lineNumber: 41,
+                                                lineNumber: 43,
                                                 columnNumber: 15
                                             }, this),
-                                            "What I Do"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-muted-foreground leading-relaxed text-sm",
+                                                children: "I design and build backend systems that are robust, maintainable, and a joy to use. I enjoy working on clean APIs, solid data models, and smooth integrations that make products feel effortless for users and teams."
+                                            }, void 0, false, {
+                                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
+                                                lineNumber: 47,
+                                                columnNumber: 15
+                                            }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                                        lineNumber: 40,
+                                        lineNumber: 42,
                                         columnNumber: 13
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-muted-foreground leading-relaxed text-sm",
-                                        children: "I craft meaningful digital experiences at the intersection of backend engineering and game design."
-                                    }, void 0, false, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "card-glow p-8 rounded-2xl hover-lift-glow",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                className: "text-xl font-bold text-foreground mb-4 flex items-center gap-3",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-3xl",
+                                                        children: "🏡"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
+                                                        lineNumber: 54,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    "The Café"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
+                                                lineNumber: 53,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-muted-foreground leading-relaxed text-sm",
+                                                children: "This portfolio is shaped like a cozy café: each section is a different table where you can sit, explore, and discover my work. Some tables highlight production-ready backend projects, others showcase prototypes and interactive worlds."
+                                            }, void 0, false, {
+                                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
+                                                lineNumber: 57,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                                        lineNumber: 44,
+                                        lineNumber: 52,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                                lineNumber: 39,
+                                lineNumber: 41,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "card-glow p-8 rounded-2xl hover-lift-glow",
+                                className: "relative flex flex-col items-center gap-6 text-center",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                        className: "text-xl font-bold text-foreground mb-4 flex items-center gap-3",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-3xl",
-                                                children: "🏡"
-                                            }, void 0, false, {
-                                                fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                                                lineNumber: 51,
-                                                columnNumber: 15
-                                            }, this),
-                                            "The Café"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                                        lineNumber: 50,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-muted-foreground leading-relaxed text-sm",
-                                        children: "This portfolio is a warm, welcoming digital space. Like stepping into a real café, each section offers something unique."
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "w-64 h-64 rounded-[30%] border border-amber-500/40 bg-gradient-to-br from-black/40 via-orange-500/20 to-amber-700/30 shadow-[0_20px_60px_rgba(0,0,0,0.6)] overflow-hidden flex items-center justify-center",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "relative w-full h-full",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    src: "/photo/self_portrait.jpeg",
+                                                    alt: "Self portrait in the Cat CafAc",
+                                                    fill: true,
+                                                    className: "object-cover rounded-[40%]",
+                                                    sizes: "(max-width: 768px) 60vw, 256px"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
+                                                    lineNumber: 66,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "absolute inset-x-0 bottom-4 text-center text-[12px] uppercase tracking-wider text-amber-50/80"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
+                                                    lineNumber: 73,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
+                                            lineNumber: 65,
+                                            columnNumber: 15
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                                        lineNumber: 54,
+                                        lineNumber: 64,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-muted-foreground text-sm leading-relaxed",
+                                        children: "Hi! I'm Julian Gaitan."
+                                    }, void 0, false, {
+                                        fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
+                                        lineNumber: 78,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                                lineNumber: 49,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                        lineNumber: 38,
+                        lineNumber: 40,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2423,37 +2493,37 @@ function AboutMe({ onNavigate }) {
                                 children: "Skills & Interests"
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                                lineNumber: 62,
+                                lineNumber: 85,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grid grid-cols-2 md:grid-cols-4 gap-3",
                                 children: [
                                     'Backend Dev',
-                                    'Game Design',
-                                    'WebGL',
+                                    'API Design',
+                                    'Python & Node.js',
+                                    'SQL & Data Modeling',
                                     'System Design',
-                                    'Team Lead',
-                                    'UX Focus',
-                                    'Performance',
-                                    'Innovation'
+                                    'Testing & Code Quality',
+                                    'Performance Optimization',
+                                    'Game Dev'
                                 ].map((skill, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "px-4 py-2 bg-orange-500/20 border border-orange-500/40 rounded-lg text-sm font-semibold text-orange-100 text-center hover:bg-orange-500/30 transition-colors",
                                         children: skill
                                     }, idx, false, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                                        lineNumber: 65,
+                                        lineNumber: 88,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                                lineNumber: 63,
+                                lineNumber: 86,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                        lineNumber: 61,
+                        lineNumber: 84,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2461,15 +2531,15 @@ function AboutMe({ onNavigate }) {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: ()=>onNavigate('hero'),
                             className: "px-6 py-2 card-glow text-foreground rounded-lg hover-lift-glow text-sm font-semibold",
-                            children: "↓ Back to Home"
+                            children: "↓ Back Home"
                         }, void 0, false, {
                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                            lineNumber: 73,
+                            lineNumber: 96,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                        lineNumber: 72,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2481,7 +2551,7 @@ function AboutMe({ onNavigate }) {
                                 children: "← Prev"
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                                lineNumber: 82,
+                                lineNumber: 105,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2490,25 +2560,25 @@ function AboutMe({ onNavigate }) {
                                 children: "Next →"
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                                lineNumber: 88,
+                                lineNumber: 111,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                        lineNumber: 81,
+                        lineNumber: 104,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-                lineNumber: 29,
+                lineNumber: 33,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/about-me.tsx",
-        lineNumber: 11,
+        lineNumber: 12,
         columnNumber: 5
     }, this);
 }
@@ -2728,7 +2798,7 @@ function Footer({ onNavigate, currentView }) {
                             className: "flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-muted-foreground/60",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: "Cat Café Studio © 2025"
+                                    children: "Julian Gaitan © 2025"
                                 }, void 0, false, {
                                     fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/footer.tsx",
                                     lineNumber: 105,
@@ -2822,7 +2892,7 @@ function Home() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative w-full h-screen overflow-hidden",
+                className: "relative w-full h-screen overflow-hidden z-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$components$2f$view$2d$container$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         isActive: currentView === 'hero',

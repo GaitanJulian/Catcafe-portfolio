@@ -28,8 +28,8 @@ export default function GameDevelopment({ onNavigate }: GameDevelopmentProps) {
       image: '/projects/interactive-portfolio-cover.png',
       status: 'In Development',
       tags: ['Unity', 'C#', 'WebGL', 'UX'],
-      itchUrl: 'https://google.com',
-      githubUrl: 'https://github.com'
+      itchUrl: 'https://gaitanjulian.itch.io/interactive-portfolio-prototype',
+      githubUrl: 'https://github.com/GaitanJulian/interactivePortfolio'
     },
     {
       title: 'Bootcamp Brawlers',
@@ -39,8 +39,8 @@ export default function GameDevelopment({ onNavigate }: GameDevelopmentProps) {
       image: '/projects/bootcamp-brawlers-cover.png',
       status: 'Complete',
       tags: ['Unity', 'C#', 'Local Multiplayer'],
-      itchUrl: 'https://google.com',
-      githubUrl: 'https://github.com'
+      itchUrl: 'https://joulesp.itch.io/boot-camp-brawlers',
+      githubUrl: 'https://github.com/GaitanJulian/BootCampBrawlersCodeSamples'
     },
     {
       title: 'Life by Candlelight',
@@ -50,8 +50,8 @@ export default function GameDevelopment({ onNavigate }: GameDevelopmentProps) {
       image: '/projects/life-by-candlelight-cover.png',
       status: 'Complete',
       tags: ['Unity', 'Lighting', 'Level Design'],
-      itchUrl: 'https://google.com',
-      githubUrl: 'https://github.com'
+      itchUrl: 'https://damamapi.itch.io/life-by-candlelight',
+      githubUrl: 'https://github.com/GaitanJulian/UnityIVSecondJam'
     },
     {
       title: 'Xenofurious Sabotage',
@@ -61,8 +61,8 @@ export default function GameDevelopment({ onNavigate }: GameDevelopmentProps) {
       image: '/projects/xenofurious-sabotage-cover.png',
       status: 'Complete',
       tags: ['Unity', '2D', 'C#'],
-      itchUrl: 'https://google.com',
-      githubUrl: 'https://github.com'
+      itchUrl: 'https://pi6g.itch.io/xenofurious-sabotage',
+      githubUrl: 'https://github.com/pi6G/XenofuriousSabotage'
     },
     {
       title: 'NanoEscape',
@@ -72,8 +72,8 @@ export default function GameDevelopment({ onNavigate }: GameDevelopmentProps) {
       image: '/projects/nano-escape-cover.png',
       status: 'Complete',
       tags: ['Unity', 'C#', 'Level Design'],
-      itchUrl: 'https://google.com',
-      githubUrl: 'https://github.com'
+      itchUrl: 'https://gaitanjulian.itch.io/nanoescape',
+      githubUrl: 'https://github.com/ZenSeit/FirstJam'
     },
     {
       title: 'Runes Quest',
@@ -83,8 +83,8 @@ export default function GameDevelopment({ onNavigate }: GameDevelopmentProps) {
       image: '/projects/runes-quest-cover.png',
       status: 'Prototype',
       tags: ['Unity', 'UI', 'C#'],
-      itchUrl: 'https://google.com',
-      githubUrl: 'https://github.com'
+      itchUrl: 'https://gaitanjulian.itch.io/runes-quest',
+      githubUrl: 'https://github.com/GaitanJulian/CardGame'
     },
     {
       title: 'Dimensional Dream',
@@ -94,8 +94,8 @@ export default function GameDevelopment({ onNavigate }: GameDevelopmentProps) {
       image: '/projects/dimensional-dream-cover.png',
       status: 'Game Jam',
       tags: ['Unity', 'C#', 'Jam Game'],
-      itchUrl: 'https://google.com',
-      githubUrl: 'https://github.com'
+      itchUrl: 'https://gaitanjulian.itch.io/dimensional-dream',
+      githubUrl: 'https://github.com/GaitanJulian/Kenney2023'
     }
   ]
 

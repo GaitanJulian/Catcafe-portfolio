@@ -43,13 +43,13 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
           {/* Main heading with gradient */}
           <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight text-balance">
             <span className="bg-gradient-to-r from-amber-100 via-orange-200 to-amber-100 bg-clip-text text-transparent drop-shadow-lg">
-              Cat Café Studio
+              Julian Gaitan Hernandez
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-light">
-            A cozy digital café where backend engineering meets game design. Step in, explore, and feel the warmth of creative work.
+            Backend Engineer crafting reliable systems and playful interactive experiences
           </p>
 
           {/* Navigation tokens */}

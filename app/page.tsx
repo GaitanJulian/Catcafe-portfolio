@@ -21,7 +21,7 @@ export default function Home() {
       <FloatingDecorations />
 
       {/* Main viewport - single screen views */}
-      <div className="relative w-full h-screen overflow-hidden">
+      <div className="relative w-full h-screen overflow-hidden z-10">
         <ViewContainer isActive={currentView === 'hero'}>
           <HeroSection onNavigate={(view) => setCurrentView(view as ViewType)} />
         </ViewContainer>
