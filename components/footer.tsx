@@ -1,7 +1,8 @@
 'use client'
 
 import React from 'react'
-import { Mail, Github, Linkedin, Twitter } from 'lucide-react'
+import { Mail } from 'lucide-react'
+import { socialLinks } from '@/lib/social-links'
 
 interface FooterProps {
   onNavigate: (view: string) => void
@@ -46,7 +47,7 @@ export default function Footer({ onNavigate, currentView }: FooterProps) {
           <div className="flex flex-col justify-center">
             <p className="text-sm text-muted-foreground mb-4 font-light">Let's Create Together</p>
             <a 
-              href="mailto:hello@example.com"
+              href="mailto:juliangaitan_h@hotmail.com"
               className="inline-flex items-center gap-2 px-4 py-2 card-glow text-foreground rounded-lg hover-lift-glow w-fit text-sm font-semibold"
             >
               <Mail size={16} />
@@ -78,23 +79,23 @@ export default function Footer({ onNavigate, currentView }: FooterProps) {
           <div className="flex flex-col justify-center">
             <p className="text-sm text-muted-foreground mb-4 font-light">Connect</p>
             <div className="flex gap-4">
-              {[
-                { icon: Github, label: 'GitHub' },
-                { icon: Linkedin, label: 'LinkedIn' },
-                { icon: Twitter, label: 'Twitter' }
-              ].map((social, idx) => {
-                const Icon = social.icon
-                return (
-                  <a
-                    key={idx}
-                    href="#"
-                    aria-label={social.label}
-                    className="p-2 rounded-lg bg-amber-700/20 text-amber-200/60 hover:text-amber-200 hover:bg-amber-700/30 transition-all"
-                  >
-                    <Icon size={18} />
-                  </a>
-                )
-              })}
+              {socialLinks
+                .filter((social) => social.label !== 'Email')
+                .map((social, idx) => {
+                  const Icon = social.icon
+                  return (
+                    <a
+                      key={idx}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={social.label}
+                      className="p-2 rounded-lg bg-amber-700/20 text-amber-200/60 hover:text-amber-200 hover:bg-amber-700/30 transition-all"
+                    >
+                      <Icon size={18} />
+                    </a>
+                  )
+                })}
             </div>
           </div>
         </div>

@@ -72,8 +72,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcaf
 ;
 ;
 const metadata = {
-    title: 'Cat Café Studio | Backend & Game Developer',
-    description: 'Welcome to my cozy digital café – exploring backend development, game design, and WebGL experiences',
+    title: 'Julian Gaitan Portfolio | Backend & Game Developer',
+    description: 'Welcome to my cozy digital café – exploring backend development and game design',
     generator: 'v0.app',
     icons: {
         icon: [

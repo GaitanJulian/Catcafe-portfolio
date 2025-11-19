@@ -1,8 +1,8 @@
 (globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
     script: typeof document === "object" ? document.currentScript : undefined,
     chunks: [
-  "static/chunks/Catcafe portfolio_Catcafe-portfolio_1492d3ef._.js",
-  "static/chunks/75a2f_7436531f._.js"
+  "static/chunks/Catcafe portfolio_Catcafe-portfolio_77597801._.js",
+  "static/chunks/75a2f_4b208eab._.js"
 ],
     source: "dynamic"
 });
