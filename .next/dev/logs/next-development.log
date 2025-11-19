@@ -1,125 +1,125 @@
-[00:00:00.755] Server  LOG      ✓ Ready in 481ms
-[00:00:05.412] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:05.776] Browser LOG     Loading Unity from: /unity-build/Build/Builds.loader.js
-[00:00:05.776] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:05.776] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:05.776] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763510891660}
-[00:00:05.776] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.framework.js.unityweb" file.
-[00:00:05.776] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.wasm.unityweb" file.
-[00:00:05.776] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.data.unityweb" file.
-[00:00:05.776] Browser LOG     [UnityCache] 'http://localhost:3000/unity-build/Build/Builds.data.unityweb' successfully downloaded and stored in the browser cache
-[00:00:07.093] Browser LOG     [UnityMemory] Configuration Parameters - Can be set up in boot.config
+[00:00:00.748] Server  LOG      ✓ Ready in 480ms
+[00:00:06.291] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.573] Browser LOG     Loading Unity from: /unity-build/Build/Builds.loader.js
+[00:00:06.574] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:06.574] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:06.574] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763512282948}
+[00:00:06.574] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.framework.js.unityweb" file.
+[00:00:06.574] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.wasm.unityweb" file.
+[00:00:06.574] Browser LOG     You can reduce startup time if you configure your web server to add "Content-Encoding: gzip" response header when serving "/unity-build/Build/Builds.data.unityweb" file.
+[00:00:06.679] Browser LOG     [UnityCache] 'http://localhost:3000/unity-build/Build/Builds.data.unityweb' successfully downloaded and stored in the browser cache
+[00:00:08.086] Browser LOG     [UnityMemory] Configuration Parameters - Can be set up in boot.config
 
-[00:00:07.093] Browser LOG         "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+[00:00:08.086] Browser LOG         "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
 
-[00:00:07.093] Browser LOG         "memorysetup-allocator-temp-initial-block-size-main=262144"
+[00:00:08.086] Browser LOG         "memorysetup-allocator-temp-initial-block-size-main=262144"
 
-[00:00:07.093] Browser LOG         "memorysetup-allocator-temp-initial-block-size-worker=262144"
+[00:00:08.086] Browser LOG         "memorysetup-allocator-temp-initial-block-size-worker=262144"
 
-[00:00:07.093] Browser LOG         "memorysetup-temp-allocator-size-audio-worker=65536"
+[00:00:08.086] Browser LOG         "memorysetup-temp-allocator-size-audio-worker=65536"
 
-[00:00:07.093] Browser LOG         "memorysetup-temp-allocator-size-background-worker=32768"
+[00:00:08.086] Browser LOG         "memorysetup-temp-allocator-size-background-worker=32768"
 
-[00:00:07.093] Browser LOG         "memorysetup-bucket-allocator-granularity=16"
+[00:00:08.086] Browser LOG         "memorysetup-bucket-allocator-granularity=16"
 
-[00:00:07.093] Browser LOG         "memorysetup-bucket-allocator-bucket-count=8"
+[00:00:08.086] Browser LOG         "memorysetup-bucket-allocator-bucket-count=8"
 
-[00:00:07.093] Browser LOG         "memorysetup-bucket-allocator-block-size=4194304"
+[00:00:08.086] Browser LOG         "memorysetup-bucket-allocator-block-size=4194304"
 
-[00:00:07.093] Browser LOG         "memorysetup-bucket-allocator-block-count=1"
+[00:00:08.086] Browser LOG         "memorysetup-bucket-allocator-block-count=1"
 
-[00:00:07.093] Browser LOG         "memorysetup-main-allocator-block-size=16777216"
+[00:00:08.086] Browser LOG         "memorysetup-main-allocator-block-size=16777216"
 
-[00:00:07.093] Browser LOG         "memorysetup-thread-allocator-block-size=16777216"
+[00:00:08.086] Browser LOG         "memorysetup-thread-allocator-block-size=16777216"
 
-[00:00:07.093] Browser LOG         "memorysetup-gfx-main-allocator-block-size=16777216"
+[00:00:08.086] Browser LOG         "memorysetup-gfx-main-allocator-block-size=16777216"
 
-[00:00:07.093] Browser LOG         "memorysetup-gfx-thread-allocator-block-size=16777216"
+[00:00:08.086] Browser LOG         "memorysetup-gfx-thread-allocator-block-size=16777216"
 
-[00:00:07.093] Browser LOG         "memorysetup-cache-allocator-block-size=4194304"
+[00:00:08.086] Browser LOG         "memorysetup-cache-allocator-block-size=4194304"
 
-[00:00:07.093] Browser LOG         "memorysetup-typetree-allocator-block-size=2097152"
+[00:00:08.086] Browser LOG         "memorysetup-typetree-allocator-block-size=2097152"
 
-[00:00:07.093] Browser LOG         "memorysetup-profiler-bucket-allocator-granularity=16"
+[00:00:08.086] Browser LOG         "memorysetup-profiler-bucket-allocator-granularity=16"
 
-[00:00:07.093] Browser LOG         "memorysetup-profiler-bucket-allocator-bucket-count=8"
+[00:00:08.086] Browser LOG         "memorysetup-profiler-bucket-allocator-bucket-count=8"
 
-[00:00:07.093] Browser LOG         "memorysetup-profiler-bucket-allocator-block-size=4194304"
+[00:00:08.086] Browser LOG         "memorysetup-profiler-bucket-allocator-block-size=4194304"
 
-[00:00:07.093] Browser LOG         "memorysetup-profiler-bucket-allocator-block-count=1"
+[00:00:08.086] Browser LOG         "memorysetup-profiler-bucket-allocator-block-count=1"
 
-[00:00:07.093] Browser LOG         "memorysetup-profiler-allocator-block-size=16777216"
+[00:00:08.086] Browser LOG         "memorysetup-profiler-allocator-block-size=16777216"
 
-[00:00:07.093] Browser LOG         "memorysetup-profiler-editor-allocator-block-size=1048576"
+[00:00:08.086] Browser LOG         "memorysetup-profiler-editor-allocator-block-size=1048576"
 
-[00:00:07.093] Browser LOG         "memorysetup-temp-allocator-size-main=4194304"
+[00:00:08.086] Browser LOG         "memorysetup-temp-allocator-size-main=4194304"
 
-[00:00:07.093] Browser LOG         "memorysetup-job-temp-allocator-block-size=2097152"
+[00:00:08.086] Browser LOG         "memorysetup-job-temp-allocator-block-size=2097152"
 
-[00:00:07.093] Browser LOG         "memorysetup-job-temp-allocator-block-size-background=1048576"
+[00:00:08.086] Browser LOG         "memorysetup-job-temp-allocator-block-size-background=1048576"
 
-[00:00:07.093] Browser LOG         "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+[00:00:08.086] Browser LOG         "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
 
-[00:00:07.093] Browser LOG     Input System module state changed to: Initialized.
+[00:00:08.086] Browser LOG     Input System module state changed to: Initialized.
 
-[00:00:07.093] Browser LOG     [Physics::Module] Initialized fallback backend.
+[00:00:08.086] Browser LOG     [Physics::Module] Initialized fallback backend.
 
-[00:00:07.093] Browser LOG     [Physics::Module] Id: 0xdecafbad
+[00:00:08.086] Browser LOG     [Physics::Module] Id: 0xdecafbad
 
-[00:00:07.093] Browser LOG     Loading player data from data.unity3d
+[00:00:08.086] Browser LOG     Loading player data from data.unity3d
 
-[00:00:07.093] Browser LOG     Initialize engine version: 6000.2.10f1 (d3d30d158480)
+[00:00:08.086] Browser LOG     Initialize engine version: 6000.2.10f1 (d3d30d158480)
 
-[00:00:07.093] Browser LOG     [Subsystems] Discovering subsystems at path UnitySubsystems
+[00:00:08.086] Browser LOG     [Subsystems] Discovering subsystems at path UnitySubsystems
 
-[00:00:07.093] Browser LOG     Creating WebGL 2.0 context.
-[00:00:07.093] Browser LOG     Renderer: WebKit WebGL
+[00:00:08.086] Browser LOG     Creating WebGL 2.0 context.
+[00:00:08.086] Browser LOG     Renderer: WebKit WebGL
 
-[00:00:07.093] Browser LOG     Vendor:   WebKit
+[00:00:08.086] Browser LOG     Vendor:   WebKit
 
-[00:00:07.093] Browser LOG     Version:  OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))
+[00:00:08.086] Browser LOG     Version:  OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))
 
-[00:00:07.093] Browser LOG     GLES:     3
+[00:00:08.086] Browser LOG     GLES:     3
 
-[00:00:07.093] Browser LOG      EXT_clip_control EXT_color_buffer_float EXT_color_buffer_half_float EXT_conservative_depth EXT_depth_clamp EXT_disjoint_timer_query_webgl2 EXT_float_blend EXT_polygon_offset_clamp EXT_render_snorm EXT_texture_compression_bptc EXT_texture_compression_rgtc EXT_texture_filter_anisotropic EXT_texture_mirror_clamp_to_edge EXT_texture_norm16 KHR_parallel_shader_compile NV_shader_noperspective_interpolation OES_draw_buffers_indexed OES_sample_variables OES_shader_multisample_interpolation OES_texture_float_linear OVR_multiview2 WEBGL_blend_func_extended WEBGL_clip_cull_distance WEBGL_compressed_texture_s3tc WEBGL_compressed_texture_s3tc_srgb WEBGL_debug_renderer_info WEBGL_debug_shaders WEBGL_lose_context WEBGL_multi_draw WEBGL_polygon_mode WEBGL_provoking_vertex WEBGL_stencil_texturing GL_EXT_clip_control GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_conservative_depth GL_EXT_depth_clamp GL_EXT_disjoint_timer_query_webgl2 GL_EXT_float_blend GL_EXT_polygon_offset_clamp GL_EXT_render_snorm GL_EXT_
+[00:00:08.086] Browser LOG      EXT_clip_control EXT_color_buffer_float EXT_color_buffer_half_float EXT_conservative_depth EXT_depth_clamp EXT_disjoint_timer_query_webgl2 EXT_float_blend EXT_polygon_offset_clamp EXT_render_snorm EXT_texture_compression_bptc EXT_texture_compression_rgtc EXT_texture_filter_anisotropic EXT_texture_mirror_clamp_to_edge EXT_texture_norm16 KHR_parallel_shader_compile NV_shader_noperspective_interpolation OES_draw_buffers_indexed OES_sample_variables OES_shader_multisample_interpolation OES_texture_float_linear OVR_multiview2 WEBGL_blend_func_extended WEBGL_clip_cull_distance WEBGL_compressed_texture_s3tc WEBGL_compressed_texture_s3tc_srgb WEBGL_debug_renderer_info WEBGL_debug_shaders WEBGL_lose_context WEBGL_multi_draw WEBGL_polygon_mode WEBGL_provoking_vertex WEBGL_stencil_texturing GL_EXT_clip_control GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_conservative_depth GL_EXT_depth_clamp GL_EXT_disjoint_timer_query_webgl2 GL_EXT_float_blend GL_EXT_polygon_offset_clamp GL_EXT_render_snorm GL_EXT_
 
-[00:00:07.093] Browser LOG     texture_compression_bptc GL_EXT_texture_compression_rgtc GL_EXT_texture_filter_anisotropic GL_EXT_texture_mirror_clamp_to_edge GL_EXT_texture_norm16 GL_KHR_parallel_shader_compile GL_NV_shader_noperspective_interpolation GL_OES_draw_buffers_indexed GL_OES_sample_variables GL_OES_shader_multisample_interpolation GL_OES_texture_float_linear GL_OVR_multiview2 GL_WEBGL_blend_func_extended GL_WEBGL_clip_cull_distance GL_WEBGL_compressed_texture_s3tc GL_WEBGL_compressed_texture_s3tc_srgb GL_WEBGL_debug_renderer_info GL_WEBGL_debug_shaders GL_WEBGL_lose_context GL_WEBGL_multi_draw GL_WEBGL_polygon_mode GL_WEBGL_provoking_vertex GL_WEBGL_stencil_texturing
+[00:00:08.086] Browser LOG     texture_compression_bptc GL_EXT_texture_compression_rgtc GL_EXT_texture_filter_anisotropic GL_EXT_texture_mirror_clamp_to_edge GL_EXT_texture_norm16 GL_KHR_parallel_shader_compile GL_NV_shader_noperspective_interpolation GL_OES_draw_buffers_indexed GL_OES_sample_variables GL_OES_shader_multisample_interpolation GL_OES_texture_float_linear GL_OVR_multiview2 GL_WEBGL_blend_func_extended GL_WEBGL_clip_cull_distance GL_WEBGL_compressed_texture_s3tc GL_WEBGL_compressed_texture_s3tc_srgb GL_WEBGL_debug_renderer_info GL_WEBGL_debug_shaders GL_WEBGL_lose_context GL_WEBGL_multi_draw GL_WEBGL_polygon_mode GL_WEBGL_provoking_vertex GL_WEBGL_stencil_texturing
 
-[00:00:07.093] Browser LOG     OPENGL LOG: Creating OpenGL ES 3.0 graphics device ; Context level  <OpenGL ES 3.0> ; Context handle 1
+[00:00:08.086] Browser LOG     OPENGL LOG: Creating OpenGL ES 3.0 graphics device ; Context level  <OpenGL ES 3.0> ; Context handle 1
 
-[00:00:07.093] Browser LOG     [Physics::Module] Selected backend.
+[00:00:08.086] Browser LOG     [Physics::Module] Selected backend.
 
-[00:00:07.093] Browser LOG     [Physics::Module] Name: PhysX
+[00:00:08.086] Browser LOG     [Physics::Module] Name: PhysX
 
-[00:00:07.093] Browser LOG     [Physics::Module] Id: 0xf2b8ea05
+[00:00:08.086] Browser LOG     [Physics::Module] Id: 0xf2b8ea05
 
-[00:00:07.093] Browser LOG     [Physics::Module] SDK Version: 4.1.2
+[00:00:08.086] Browser LOG     [Physics::Module] SDK Version: 4.1.2
 
-[00:00:07.093] Browser LOG     [Physics::Module] Integration Version: 1.0.0
+[00:00:08.086] Browser LOG     [Physics::Module] Integration Version: 1.0.0
 
-[00:00:07.093] Browser LOG     [Physics::Module] Threading Mode: Single-Threaded
+[00:00:08.086] Browser LOG     [Physics::Module] Threading Mode: Single-Threaded
 
-[00:00:07.093] Browser LOG     ERROR: Shader 
-[00:00:07.093] Browser LOG     Hidden/CoreSRP/CoreCopy shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+[00:00:08.086] Browser LOG     ERROR: Shader 
+[00:00:08.086] Browser LOG     Hidden/CoreSRP/CoreCopy shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
 
-[00:00:07.093] Browser LOG     ERROR: Shader 
-[00:00:07.093] Browser LOG     Hidden/Universal Render Pipeline/StencilDitherMaskSeed shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+[00:00:08.086] Browser LOG     ERROR: Shader 
+[00:00:08.086] Browser LOG     Hidden/Universal Render Pipeline/StencilDitherMaskSeed shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
 
-[00:00:07.093] Browser LOG     ERROR: Shader 
-[00:00:07.093] Browser LOG     Hidden/Universal/HDRDebugView shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+[00:00:08.086] Browser LOG     ERROR: Shader 
+[00:00:08.086] Browser LOG     Hidden/Universal/HDRDebugView shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
 
-[00:00:07.093] Browser LOG     Input System initialize...
+[00:00:08.086] Browser LOG     Input System initialize...
 
-[00:00:07.093] Browser LOG     UnloadTime: 0.500000 ms
+[00:00:08.086] Browser LOG     UnloadTime: 0.500000 ms
 
-[00:00:07.093] Browser WARN    Failed to create agent because there is no valid NavMesh
+[00:00:08.086] Browser WARN    Failed to create agent because there is no valid NavMesh
 
-[00:00:07.093] Browser WARN    Failed to create agent because there is no valid NavMesh
+[00:00:08.086] Browser WARN    Failed to create agent because there is no valid NavMesh
 
-[00:00:07.093] Browser WARN    Failed to create agent because there is no valid NavMesh
+[00:00:08.086] Browser WARN    Failed to create agent because there is no valid NavMesh
 
-[00:00:07.093] Browser WARN    Failed to create agent because there is no valid NavMesh
+[00:00:08.086] Browser WARN    Failed to create agent because there is no valid NavMesh
 
-[00:00:07.093] Browser LOG     Audio context resumed after 0.442 seconds.
-[00:00:09.311] Browser LOG     RenderGraph is now enabled.
+[00:00:08.086] Browser LOG     Audio context resumed after 0.542 seconds.
+[00:00:10.279] Browser LOG     RenderGraph is now enabled.
 
