@@ -44,6 +44,28 @@ export default function BackendProjects({ onNavigate }: BackendProjectsProps) {
       liveUrl: 'https://incident-89vl06psn-julians-projects-389143e1.vercel.app'
     },
     {
+      title: 'FlowOrder',
+      description:
+        'Asynchronous order processing platform with real-time payment simulation, signed webhooks, JWT authentication, refresh tokens, and state machine for order lifecycle.',
+      emoji: '🔄',
+      tags: ['Node.js', 'TypeScript', 'Express', 'PostgreSQL', 'Docker', 'JWT', 'Prisma'],
+      image: '/projects/floworder-cover.png',
+      techStack: [
+        'Node.js',
+        'TypeScript',
+        'Express',
+        'PostgreSQL',
+        'Prisma',
+        'Docker',
+        'JWT',
+        'Supertest',
+        'Jest'
+      ],
+      githubUrl: 'https://github.com/GaitanJulian/PaymentFlow', 
+      liveUrl: '', 
+      apiUrl: '' 
+    },
+    {
       title: 'GameInsider',
       description: 'A Django-based forum platform for video game discussions. Users can create posts, search content, like and comment on posts, and manage their profiles with custom bios and pictures.',
       emoji: '🎮',

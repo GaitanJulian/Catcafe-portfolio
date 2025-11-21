@@ -387,6 +387,35 @@ function BackendProjects({ onNavigate }) {
             liveUrl: 'https://incident-89vl06psn-julians-projects-389143e1.vercel.app'
         },
         {
+            title: 'FlowOrder',
+            description: 'Asynchronous order processing platform with real-time payment simulation, signed webhooks, JWT authentication, refresh tokens, and state machine for order lifecycle.',
+            emoji: '🔄',
+            tags: [
+                'Node.js',
+                'TypeScript',
+                'Express',
+                'PostgreSQL',
+                'Docker',
+                'JWT',
+                'Prisma'
+            ],
+            image: '/projects/floworder-cover.png',
+            techStack: [
+                'Node.js',
+                'TypeScript',
+                'Express',
+                'PostgreSQL',
+                'Prisma',
+                'Docker',
+                'JWT',
+                'Supertest',
+                'Jest'
+            ],
+            githubUrl: 'https://github.com/GaitanJulian/PaymentFlow',
+            liveUrl: '',
+            apiUrl: ''
+        },
+        {
             title: 'GameInsider',
             description: 'A Django-based forum platform for video game discussions. Users can create posts, search content, like and comment on posts, and manage their profiles with custom bios and pictures.',
             emoji: '🎮',
@@ -470,7 +499,7 @@ function BackendProjects({ onNavigate }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                lineNumber: 96,
+                lineNumber: 118,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -480,7 +509,7 @@ function BackendProjects({ onNavigate }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                lineNumber: 101,
+                lineNumber: 123,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -490,7 +519,7 @@ function BackendProjects({ onNavigate }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                lineNumber: 107,
+                lineNumber: 129,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -504,7 +533,7 @@ function BackendProjects({ onNavigate }) {
                                 children: "Backend Projects Shelf"
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                lineNumber: 117,
+                                lineNumber: 139,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -512,13 +541,13 @@ function BackendProjects({ onNavigate }) {
                                 children: "Carefully displayed projects"
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                lineNumber: 120,
+                                lineNumber: 142,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                        lineNumber: 116,
+                        lineNumber: 138,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -539,19 +568,19 @@ function BackendProjects({ onNavigate }) {
                                                 sizes: "(max-width: 768px) 100vw, 25vw"
                                             }, void 0, false, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                lineNumber: 130,
+                                                lineNumber: 152,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 129,
+                                            lineNumber: 151,
                                             columnNumber: 17
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "text-5xl mb-6",
                                             children: projects[left].emoji
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 139,
+                                            lineNumber: 161,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -559,7 +588,7 @@ function BackendProjects({ onNavigate }) {
                                             children: projects[left].title
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 141,
+                                            lineNumber: 163,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -567,7 +596,7 @@ function BackendProjects({ onNavigate }) {
                                             children: projects[left].description
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 142,
+                                            lineNumber: 164,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -577,23 +606,23 @@ function BackendProjects({ onNavigate }) {
                                                     children: tag
                                                 }, i, false, {
                                                     fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                    lineNumber: 145,
+                                                    lineNumber: 167,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 143,
+                                            lineNumber: 165,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                    lineNumber: 127,
+                                    lineNumber: 149,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                lineNumber: 126,
+                                lineNumber: 148,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -614,19 +643,19 @@ function BackendProjects({ onNavigate }) {
                                                 sizes: "(max-width: 768px) 100vw, 33vw"
                                             }, void 0, false, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                lineNumber: 160,
+                                                lineNumber: 182,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 159,
+                                            lineNumber: 181,
                                             columnNumber: 17
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "text-4xl mb-3 flex-shrink-0",
                                             children: projects[center].emoji
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 169,
+                                            lineNumber: 191,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -634,7 +663,7 @@ function BackendProjects({ onNavigate }) {
                                             children: projects[center].title
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 171,
+                                            lineNumber: 193,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -642,7 +671,7 @@ function BackendProjects({ onNavigate }) {
                                             children: projects[center].description
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 172,
+                                            lineNumber: 194,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -652,12 +681,12 @@ function BackendProjects({ onNavigate }) {
                                                     children: tag
                                                 }, i, false, {
                                                     fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                    lineNumber: 175,
+                                                    lineNumber: 197,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 173,
+                                            lineNumber: 195,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -671,7 +700,7 @@ function BackendProjects({ onNavigate }) {
                                                     children: "GitHub"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                    lineNumber: 183,
+                                                    lineNumber: 205,
                                                     columnNumber: 19
                                                 }, this),
                                                 projects[center].liveUrl && projects[center].liveUrl.trim() !== '' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -682,7 +711,7 @@ function BackendProjects({ onNavigate }) {
                                                     children: "Live Demo"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                    lineNumber: 193,
+                                                    lineNumber: 215,
                                                     columnNumber: 19
                                                 }, this),
                                                 projects[center].apiUrl && projects[center].apiUrl.trim() !== '' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -693,7 +722,7 @@ function BackendProjects({ onNavigate }) {
                                                     children: "API"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                    lineNumber: 203,
+                                                    lineNumber: 225,
                                                     columnNumber: 19
                                                 }, this),
                                                 projects[center].screenshots && projects[center].screenshots.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -705,24 +734,24 @@ function BackendProjects({ onNavigate }) {
                                                     children: "📸 Screenshots"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                    lineNumber: 213,
+                                                    lineNumber: 235,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 181,
+                                            lineNumber: 203,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                    lineNumber: 155,
+                                    lineNumber: 177,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                lineNumber: 154,
+                                lineNumber: 176,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -740,19 +769,19 @@ function BackendProjects({ onNavigate }) {
                                                 sizes: "(max-width: 768px) 100vw, 25vw"
                                             }, void 0, false, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                lineNumber: 232,
+                                                lineNumber: 254,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 231,
+                                            lineNumber: 253,
                                             columnNumber: 17
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "text-5xl mb-6",
                                             children: projects[right].emoji
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 241,
+                                            lineNumber: 263,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -760,7 +789,7 @@ function BackendProjects({ onNavigate }) {
                                             children: projects[right].title
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 243,
+                                            lineNumber: 265,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -768,7 +797,7 @@ function BackendProjects({ onNavigate }) {
                                             children: projects[right].description
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 244,
+                                            lineNumber: 266,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -778,29 +807,29 @@ function BackendProjects({ onNavigate }) {
                                                     children: tag
                                                 }, i, false, {
                                                     fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                    lineNumber: 247,
+                                                    lineNumber: 269,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 245,
+                                            lineNumber: 267,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                    lineNumber: 229,
+                                    lineNumber: 251,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                lineNumber: 228,
+                                lineNumber: 250,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                        lineNumber: 124,
+                        lineNumber: 146,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -812,7 +841,7 @@ function BackendProjects({ onNavigate }) {
                                 children: "← Prev"
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                lineNumber: 258,
+                                lineNumber: 280,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -822,12 +851,12 @@ function BackendProjects({ onNavigate }) {
                                         className: `w-2 h-2 rounded-full transition-all ${centerIndex === idx ? 'bg-orange-400 w-6' : 'bg-orange-400/40'}`
                                     }, idx, false, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                        lineNumber: 266,
+                                        lineNumber: 288,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                lineNumber: 264,
+                                lineNumber: 286,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -836,13 +865,13 @@ function BackendProjects({ onNavigate }) {
                                 children: "Next →"
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                lineNumber: 275,
+                                lineNumber: 297,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                        lineNumber: 257,
+                        lineNumber: 279,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -853,12 +882,12 @@ function BackendProjects({ onNavigate }) {
                             children: "↓ Back to Home"
                         }, void 0, false, {
                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                            lineNumber: 284,
+                            lineNumber: 306,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                        lineNumber: 283,
+                        lineNumber: 305,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -870,7 +899,7 @@ function BackendProjects({ onNavigate }) {
                                 children: "← Prev"
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                lineNumber: 293,
+                                lineNumber: 315,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -879,19 +908,19 @@ function BackendProjects({ onNavigate }) {
                                 children: "Next →"
                             }, void 0, false, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                lineNumber: 299,
+                                lineNumber: 321,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                        lineNumber: 292,
+                        lineNumber: 314,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                lineNumber: 114,
+                lineNumber: 136,
                 columnNumber: 7
             }, this),
             showScreenshots && projects[centerIndex].screenshots && projects[centerIndex].screenshots.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -906,7 +935,7 @@ function BackendProjects({ onNavigate }) {
                         className: "absolute inset-0 bg-black/80 backdrop-blur-sm"
                     }, void 0, false, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                        lineNumber: 319,
+                        lineNumber: 341,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -916,7 +945,7 @@ function BackendProjects({ onNavigate }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                        lineNumber: 320,
+                        lineNumber: 342,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -936,7 +965,7 @@ function BackendProjects({ onNavigate }) {
                                                 children: "📸"
                                             }, void 0, false, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                lineNumber: 334,
+                                                lineNumber: 356,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -947,13 +976,13 @@ function BackendProjects({ onNavigate }) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                lineNumber: 335,
+                                                lineNumber: 357,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                        lineNumber: 333,
+                                        lineNumber: 355,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -962,13 +991,13 @@ function BackendProjects({ onNavigate }) {
                                         children: "✕ Close"
                                     }, void 0, false, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                        lineNumber: 339,
+                                        lineNumber: 361,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                lineNumber: 332,
+                                lineNumber: 354,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -984,12 +1013,12 @@ function BackendProjects({ onNavigate }) {
                                             sizes: "(max-width: 768px) 100vw, 80vw"
                                         }, void 0, false, {
                                             fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                            lineNumber: 350,
+                                            lineNumber: 372,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                        lineNumber: 349,
+                                        lineNumber: 371,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1004,7 +1033,7 @@ function BackendProjects({ onNavigate }) {
                                                 children: "← Prev"
                                             }, void 0, false, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                lineNumber: 361,
+                                                lineNumber: 383,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1014,12 +1043,12 @@ function BackendProjects({ onNavigate }) {
                                                         className: `w-2 h-2 rounded-full transition-all ${screenshotIndex === idx ? 'bg-orange-400 w-6' : 'bg-orange-400/40'}`
                                                     }, idx, false, {
                                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                        lineNumber: 376,
+                                                        lineNumber: 398,
                                                         columnNumber: 21
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                lineNumber: 374,
+                                                lineNumber: 396,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1031,13 +1060,13 @@ function BackendProjects({ onNavigate }) {
                                                 children: "Next →"
                                             }, void 0, false, {
                                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                                lineNumber: 386,
+                                                lineNumber: 408,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                        lineNumber: 360,
+                                        lineNumber: 382,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Catcafe__portfolio$2f$Catcafe$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1049,31 +1078,31 @@ function BackendProjects({ onNavigate }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                        lineNumber: 400,
+                                        lineNumber: 422,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                                lineNumber: 348,
+                                lineNumber: 370,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                        lineNumber: 328,
+                        lineNumber: 350,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-                lineNumber: 310,
+                lineNumber: 332,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Catcafe portfolio/Catcafe-portfolio/components/backend-projects.tsx",
-        lineNumber: 95,
+        lineNumber: 117,
         columnNumber: 5
     }, this);
 }
