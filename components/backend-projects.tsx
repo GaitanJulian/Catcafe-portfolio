@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image'
+import { usePreloadImages } from '../hooks/use-preload-images'
 
 interface Project {
   title: string
@@ -20,76 +21,83 @@ interface BackendProjectsProps {
   onNavigate: (view: string) => void
 }
 
+const backendProjects: Project[] = [
+  {
+    title: 'StatusBoard',
+    description: 'A fullstack incident & production support dashboard. Simulates Level 3 support workflow with REST APIs, incident tracking, and status management.',
+    emoji: 'dY"S',
+    tags: ['Node.js', 'TypeScript', 'Express', 'React', 'Prisma'],
+    image: '/projects/statusboard-cover.png',
+    techStack: ['Node.js', 'TypeScript', 'Express', 'React', 'Prisma', 'SQLite'],
+    githubUrl: 'https://github.com/GaitanJulian/StatusBoard',
+    liveUrl: 'https://status-board-dxljzosd7-julians-projects-389143e1.vercel.app', // Agregar Live Demo URL cuando la tengas
+    apiUrl: '' // Opcional: URL del backend si estA� desplegada por separado
+  },
+  {
+    title: 'IncidentHub',
+    description: 'Production-ready RESTful API for incident management with JWT authentication, role-based access control, service management, and audit logs.',
+    emoji: '�s�',
+    tags: ['Node.js', 'TypeScript', 'Express', 'PostgreSQL', 'Docker', 'JWT'],
+    image: '/projects/incidenthub-cover.png',
+    techStack: ['Node.js', 'TypeScript', 'Express', 'PostgreSQL', 'Prisma', 'Docker', 'JWT', 'React'],
+    githubUrl: 'https://github.com/GaitanJulian/IncidentHub',
+    liveUrl: 'https://incident-89vl06psn-julians-projects-389143e1.vercel.app'
+  },
+  {
+    title: 'FlowOrder',
+    description:
+      'Asynchronous order processing platform with real-time payment simulation, signed webhooks, JWT authentication, refresh tokens, and state machine for order lifecycle.',
+    emoji: 'dY",',
+    tags: ['Node.js', 'TypeScript', 'Express', 'PostgreSQL', 'Docker', 'JWT', 'Prisma'],
+    image: '/projects/floworder-cover.png',
+    techStack: [
+      'Node.js',
+      'TypeScript',
+      'Express',
+      'PostgreSQL',
+      'Prisma',
+      'Docker',
+      'JWT',
+      'Supertest',
+      'Jest'
+    ],
+    githubUrl: 'https://github.com/GaitanJulian/PaymentFlow', 
+    liveUrl: '', 
+    apiUrl: '' 
+  },
+  {
+    title: 'GameInsider',
+    description: 'A Django-based forum platform for video game discussions. Users can create posts, search content, like and comment on posts, and manage their profiles with custom bios and pictures.',
+    emoji: 'dYZr',
+    tags: ['Python', 'Django', 'SQLite', 'Bootstrap', 'JavaScript'],
+    image: '/projects/gameinsider-cover.png',
+    techStack: ['Python', 'Django', 'SQLite', 'Bootstrap', 'JavaScript', 'HTML', 'CSS'],
+    githubUrl: 'https://github.com/GaitanJulian/GameInsiderDjango',
+    liveUrl: '' // Agregar Live Demo URL si estA� desplegada
+  },
+  {
+    title: 'Postpartum Hemorrhage XR Simulation',
+    description: 'Mixed reality training simulation developed in Unity to guide medical students through postpartum hemorrhage procedures. Features spatial anchors, data capture, and performance analytics.',
+    emoji: 'dY?�',
+    tags: ['Unity', 'C#', 'Mixed Reality', 'XR', 'Data Analytics', 'Spatial Anchors'],
+    image: '/projects/hemorrhage-xr-cover.png',
+    techStack: ['Unity', 'C#', 'Mixed Reality', 'XR', 'Voice Commands', 'Data Analytics', 'Spatial Anchors'],
+    screenshots: [
+      '/projects/hemorrhage-xr-1.jpeg',
+      '/projects/hemorrhage-xr-2.png',
+      '/projects/hemorrhage-xr-3.png'
+      // Agregar mA�s screenshots cuando los tengas
+    ]
+  }
+]
+
+const backendProjectImageUrls = backendProjects
+  .map((project) => project.image)
+  .filter((image): image is string => Boolean(image))
+
 export default function BackendProjects({ onNavigate }: BackendProjectsProps) {
-  const projects: Project[] = [
-    {
-      title: 'StatusBoard',
-      description: 'A fullstack incident & production support dashboard. Simulates Level 3 support workflow with REST APIs, incident tracking, and status management.',
-      emoji: '📊',
-      tags: ['Node.js', 'TypeScript', 'Express', 'React', 'Prisma'],
-      image: '/projects/statusboard-cover.png',
-      techStack: ['Node.js', 'TypeScript', 'Express', 'React', 'Prisma', 'SQLite'],
-      githubUrl: 'https://github.com/GaitanJulian/StatusBoard',
-      liveUrl: 'https://status-board-dxljzosd7-julians-projects-389143e1.vercel.app', // Agregar Live Demo URL cuando la tengas
-      apiUrl: '' // Opcional: URL del backend si está desplegada por separado
-    },
-    {
-      title: 'IncidentHub',
-      description: 'Production-ready RESTful API for incident management with JWT authentication, role-based access control, service management, and audit logs.',
-      emoji: '⚡',
-      tags: ['Node.js', 'TypeScript', 'Express', 'PostgreSQL', 'Docker', 'JWT'],
-      image: '/projects/incidenthub-cover.png',
-      techStack: ['Node.js', 'TypeScript', 'Express', 'PostgreSQL', 'Prisma', 'Docker', 'JWT', 'React'],
-      githubUrl: 'https://github.com/GaitanJulian/IncidentHub',
-      liveUrl: 'https://incident-89vl06psn-julians-projects-389143e1.vercel.app'
-    },
-    {
-      title: 'FlowOrder',
-      description:
-        'Asynchronous order processing platform with real-time payment simulation, signed webhooks, JWT authentication, refresh tokens, and state machine for order lifecycle.',
-      emoji: '🔄',
-      tags: ['Node.js', 'TypeScript', 'Express', 'PostgreSQL', 'Docker', 'JWT', 'Prisma'],
-      image: '/projects/floworder-cover.png',
-      techStack: [
-        'Node.js',
-        'TypeScript',
-        'Express',
-        'PostgreSQL',
-        'Prisma',
-        'Docker',
-        'JWT',
-        'Supertest',
-        'Jest'
-      ],
-      githubUrl: 'https://github.com/GaitanJulian/PaymentFlow', 
-      liveUrl: '', 
-      apiUrl: '' 
-    },
-    {
-      title: 'GameInsider',
-      description: 'A Django-based forum platform for video game discussions. Users can create posts, search content, like and comment on posts, and manage their profiles with custom bios and pictures.',
-      emoji: '🎮',
-      tags: ['Python', 'Django', 'SQLite', 'Bootstrap', 'JavaScript'],
-      image: '/projects/gameinsider-cover.png',
-      techStack: ['Python', 'Django', 'SQLite', 'Bootstrap', 'JavaScript', 'HTML', 'CSS'],
-      githubUrl: 'https://github.com/GaitanJulian/GameInsiderDjango',
-      liveUrl: '' // Agregar Live Demo URL si está desplegada
-    },
-    {
-      title: 'Postpartum Hemorrhage XR Simulation',
-      description: 'Mixed reality training simulation developed in Unity to guide medical students through postpartum hemorrhage procedures. Features spatial anchors, data capture, and performance analytics.',
-      emoji: '🏥',
-      tags: ['Unity', 'C#', 'Mixed Reality', 'XR', 'Data Analytics', 'Spatial Anchors'],
-      image: '/projects/hemorrhage-xr-cover.png',
-      techStack: ['Unity', 'C#', 'Mixed Reality', 'XR', 'Voice Commands', 'Data Analytics', 'Spatial Anchors'],
-      screenshots: [
-        '/projects/hemorrhage-xr-1.jpeg',
-        '/projects/hemorrhage-xr-2.png',
-        '/projects/hemorrhage-xr-3.png'
-        // Agregar más screenshots cuando los tengas
-      ]
-    }
-  ]
+  usePreloadImages(backendProjectImageUrls)
+  const projects = backendProjects
 
   const [centerIndex, setCenterIndex] = useState(0)
   const [showScreenshots, setShowScreenshots] = useState(false)
@@ -429,3 +437,4 @@ export default function BackendProjects({ onNavigate }: BackendProjectsProps) {
     </div>
   )
 }
+

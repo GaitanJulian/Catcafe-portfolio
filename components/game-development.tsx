@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image'
+import { usePreloadImages } from '../hooks/use-preload-images'
 
 interface Game {
   title: string
@@ -18,86 +19,93 @@ interface GameDevelopmentProps {
   onNavigate: (view: string) => void
 }
 
+const gamesData: Game[] = [
+  {
+    title: 'Interactive Portfolio (WIP)',
+    description:
+      'A living, interactive space where visitors can explore my work as a 3D character, discover projects, and experience playful design.',
+    emoji: '??',
+    image: '/projects/interactive-portfolio-cover.png',
+    status: 'In Development',
+    tags: ['Unity', 'C#', 'WebGL', 'UX'],
+    itchUrl: 'https://gaitanjulian.itch.io/interactive-portfolio-prototype',
+    githubUrl: 'https://github.com/GaitanJulian/interactivePortfolio'
+  },
+  {
+    title: 'Bootcamp Brawlers',
+    description:
+      'Fast-paced arena brawler for up to 4 players with hazards, pickups, and polished gameplay.',
+    emoji: '??',
+    image: '/projects/bootcamp-brawlers-cover.png',
+    status: 'Complete',
+    tags: ['Unity', 'C#', 'Local Multiplayer'],
+    itchUrl: 'https://joulesp.itch.io/boot-camp-brawlers',
+    githubUrl: 'https://github.com/GaitanJulian/BootCampBrawlersCodeSamples'
+  },
+  {
+    title: 'Life by Candlelight',
+    description:
+      'Atmospheric narrative-driven horror about light management, space tension and storytelling.',
+    emoji: '???',
+    image: '/projects/life-by-candlelight-cover.png',
+    status: 'Complete',
+    tags: ['Unity', 'Lighting', 'Level Design'],
+    itchUrl: 'https://damamapi.itch.io/life-by-candlelight',
+    githubUrl: 'https://github.com/GaitanJulian/UnityIVSecondJam'
+  },
+  {
+    title: 'Xenofurious Sabotage',
+    description:
+      'Pixel-art arcade shooter with tight controls and tuned enemy patterns.',
+    emoji: '??',
+    image: '/projects/xenofurious-sabotage-cover.png',
+    status: 'Complete',
+    tags: ['Unity', '2D', 'C#'],
+    itchUrl: 'https://pi6g.itch.io/xenofurious-sabotage',
+    githubUrl: 'https://github.com/pi6G/XenofuriousSabotage'
+  },
+  {
+    title: 'NanoEscape',
+    description:
+      'Puzzle-platformer focusing on mechanics clarity and level pacing.',
+    emoji: '??',
+    image: '/projects/nano-escape-cover.png',
+    status: 'Complete',
+    tags: ['Unity', 'C#', 'Level Design'],
+    itchUrl: 'https://gaitanjulian.itch.io/nanoescape',
+    githubUrl: 'https://github.com/ZenSeit/FirstJam'
+  },
+  {
+    title: 'Runes Quest',
+    description:
+      'Card + strategy prototype mixing lane combat and UI feedback.',
+    emoji: '??',
+    image: '/projects/runes-quest-cover.png',
+    status: 'Prototype',
+    tags: ['Unity', 'UI', 'C#'],
+    itchUrl: 'https://gaitanjulian.itch.io/runes-quest',
+    githubUrl: 'https://github.com/GaitanJulian/CardGame'
+  },
+  {
+    title: 'Dimensional Dream',
+    description:
+      'Puzzle-platformer made in a jam with rapid prototyping and collaboration focus.',
+    emoji: '?',
+    image: '/projects/dimensional-dream-cover.png',
+    status: 'Game Jam',
+    tags: ['Unity', 'C#', 'Jam Game'],
+    itchUrl: 'https://gaitanjulian.itch.io/dimensional-dream',
+    githubUrl: 'https://github.com/GaitanJulian/Kenney2023'
+  }
+]
+
+const gameImageUrls = gamesData
+  .map((game) => game.image)
+  .filter((image): image is string => Boolean(image))
+
 export default function GameDevelopment({ onNavigate }: GameDevelopmentProps) {
-  const games: Game[] = [
-    {
-      title: 'Interactive Portfolio (WIP)',
-      description:
-        'A living, interactive space where visitors can explore my work as a 3D character, discover projects, and experience playful design.',
-      emoji: '🐾',
-      image: '/projects/interactive-portfolio-cover.png',
-      status: 'In Development',
-      tags: ['Unity', 'C#', 'WebGL', 'UX'],
-      itchUrl: 'https://gaitanjulian.itch.io/interactive-portfolio-prototype',
-      githubUrl: 'https://github.com/GaitanJulian/interactivePortfolio'
-    },
-    {
-      title: 'Bootcamp Brawlers',
-      description:
-        'Fast-paced arena brawler for up to 4 players with hazards, pickups, and polished gameplay.',
-      emoji: '⚔️',
-      image: '/projects/bootcamp-brawlers-cover.png',
-      status: 'Complete',
-      tags: ['Unity', 'C#', 'Local Multiplayer'],
-      itchUrl: 'https://joulesp.itch.io/boot-camp-brawlers',
-      githubUrl: 'https://github.com/GaitanJulian/BootCampBrawlersCodeSamples'
-    },
-    {
-      title: 'Life by Candlelight',
-      description:
-        'Atmospheric narrative-driven horror about light management, space tension and storytelling.',
-      emoji: '🕯️',
-      image: '/projects/life-by-candlelight-cover.png',
-      status: 'Complete',
-      tags: ['Unity', 'Lighting', 'Level Design'],
-      itchUrl: 'https://damamapi.itch.io/life-by-candlelight',
-      githubUrl: 'https://github.com/GaitanJulian/UnityIVSecondJam'
-    },
-    {
-      title: 'Xenofurious Sabotage',
-      description:
-        'Pixel-art arcade shooter with tight controls and tuned enemy patterns.',
-      emoji: '👾',
-      image: '/projects/xenofurious-sabotage-cover.png',
-      status: 'Complete',
-      tags: ['Unity', '2D', 'C#'],
-      itchUrl: 'https://pi6g.itch.io/xenofurious-sabotage',
-      githubUrl: 'https://github.com/pi6G/XenofuriousSabotage'
-    },
-    {
-      title: 'NanoEscape',
-      description:
-        'Puzzle-platformer focusing on mechanics clarity and level pacing.',
-      emoji: '🧪',
-      image: '/projects/nano-escape-cover.png',
-      status: 'Complete',
-      tags: ['Unity', 'C#', 'Level Design'],
-      itchUrl: 'https://gaitanjulian.itch.io/nanoescape',
-      githubUrl: 'https://github.com/ZenSeit/FirstJam'
-    },
-    {
-      title: 'Runes Quest',
-      description:
-        'Card + strategy prototype mixing lane combat and UI feedback.',
-      emoji: '🔮',
-      image: '/projects/runes-quest-cover.png',
-      status: 'Prototype',
-      tags: ['Unity', 'UI', 'C#'],
-      itchUrl: 'https://gaitanjulian.itch.io/runes-quest',
-      githubUrl: 'https://github.com/GaitanJulian/CardGame'
-    },
-    {
-      title: 'Dimensional Dream',
-      description:
-        'Puzzle-platformer made in a jam with rapid prototyping and collaboration focus.',
-      emoji: '✨',
-      image: '/projects/dimensional-dream-cover.png',
-      status: 'Game Jam',
-      tags: ['Unity', 'C#', 'Jam Game'],
-      itchUrl: 'https://gaitanjulian.itch.io/dimensional-dream',
-      githubUrl: 'https://github.com/GaitanJulian/Kenney2023'
-    }
-  ]
+  usePreloadImages(gameImageUrls)
+  const games = gamesData
 
   const [centerIndex, setCenterIndex] = useState(0)
 
@@ -219,7 +227,7 @@ export default function GameDevelopment({ onNavigate }: GameDevelopmentProps) {
                     rel="noopener noreferrer"
                     className="px-3 py-2 bg-teal-600/30 text-teal-100 hover:bg-teal-600/50 rounded-lg text-xs font-semibold transition-all text-center"
                   >
-                    ▶ Play on Itch.io
+                    ? Play on Itch.io
                   </a>
                 )}
                 {games[center].githubUrl && (
@@ -319,3 +327,4 @@ export default function GameDevelopment({ onNavigate }: GameDevelopmentProps) {
     </div>
   )
 }
+
